@@ -1,0 +1,34 @@
+//principal color : bleu ciel rgb(78, 206, 248)
+//secondary color : blanc  #FFF
+//tertiary color : bleu plus foncé #00aaff;
+
+
+/*Initialisation début de projet*/
+*, ::before,::after{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+// html{
+//     width: 100%;
+// }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $polices_textes;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;   
+}
+
+li{
+    list-style-type: none;
+}
+
+// main a{
+//     color: black;
+// }

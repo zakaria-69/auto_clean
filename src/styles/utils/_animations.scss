@@ -1,0 +1,28 @@
+@keyframes wash-text {
+    from {
+      left: -100%; 
+    }
+    to {
+      left: 100%; 
+    }
+  }
+
+
+  @keyframes wash-icon-effect {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  
+  @keyframes wash-icon {
+    from {
+      left: -100%; /* Hors du conteneur */
+    }
+    to {
+      left: 100%; /* Déplacer l'animation à travers l'élément */
+    }
+  }
