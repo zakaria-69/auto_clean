@@ -84,7 +84,7 @@ const Home = () => {
             <p className="decouverte_formule_container_card_textAndLink_text">
               Auto Clean
             </p>
-            <a className="decouverte_formule_container_card_textAndLink_link">
+            <a href="#formule_picker" className="decouverte_formule_container_card_textAndLink_link">
               Découvrir nos formules
             </a>
           </div>
@@ -113,14 +113,14 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className="formules_picker_container">
+      <section className="formules_picker_container" id="formule_picker">
         <h2>Nos formules</h2>
         <div className="formules_picker_container_cards">
           <div className="formules_picker_container_cards_card formule_card_one">
             <h3 className="formules_picker_container_cards_card_title">
             Éclat Serein
             </h3>
-            <p className="formules_picker_container_cards_card_price">prix 1</p>
+            <p className="formules_picker_container_cards_card_price">à partir de 120€</p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
@@ -139,7 +139,7 @@ const Home = () => {
             <h3 className="formules_picker_container_cards_card_title">
             Performance Brillante
             </h3>
-            <p className="formules_picker_container_cards_card_price">prix 2</p>
+            <p className="formules_picker_container_cards_card_price">à partir de 180€</p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
@@ -166,7 +166,7 @@ const Home = () => {
             <h3 className="formules_picker_container_cards_card_title">
             Rénovation Premium
             </h3>
-            <p className="formules_picker_container_cards_card_price">prix 3</p>
+            <p className="formules_picker_container_cards_card_price">à partir de 240€</p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
