@@ -4,3 +4,92 @@
     text-transform: uppercase;
     font-size: 2.5rem;
 }
+
+@mixin link_Tall {
+    padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.5rem;
+                font-weight: 600;
+                cursor: pointer;
+                z-index: 2;
+                transition: background-color 1s ease;
+                color: $secondary_color;
+                background: $linear_gradient_text;
+                color: black;
+                text-align: center;
+}
+
+@mixin linkMedium {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                z-index: 2;
+                transition: background-color 1s ease;
+                color: $secondary_color;
+                background: $linear_gradient_text;
+                color: black;
+                text-align: center;
+                width: 75%;
+                margin: 2rem auto 2rem auto;
+}
+
+@mixin linkSmall {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.5rem;
+                font-weight: 600;
+                cursor: pointer;
+                z-index: 2;
+                transition: background-color 1s ease;
+                color: $secondary_color;
+                background: $linear_gradient_text;
+                color: black;
+                text-align: center;
+                width: 50%;
+                margin: 40px auto 0 auto;
+}
+
+@mixin linkHover{
+    background: $reverse_linear_gradient_text;
+    color: black;
+}
+
+@mixin linkActive{
+    background: $linear_gradient_text;
+    color: white;
+}
+
+@mixin linearGradientText {
+    background: $linear_gradient_text;
+          background-clip: text; 
+          -webkit-background-clip: text; 
+          color: transparent;
+}
+
+@mixin reverseLinearGradientText {
+    background: $reverse_linear_gradient_text;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+@mixin leftCadre{
+    border-top: double rgb(78, 206, 248) 4px;
+        border-bottom: double rgb(78, 206, 248) 4px;
+        border-left: double rgb(78, 206, 248) 4px;
+        border-radius: 25px;
+        padding : 5px;
+}
+
+@mixin rightCadre {
+    border-top: double rgb(78, 206, 248) 4px;
+        border-bottom: double rgb(78, 206, 248) 4px;
+        border-right: double rgb(78, 206, 248) 4px;
+        border-radius: 25px;
+        padding : 5px;
+}

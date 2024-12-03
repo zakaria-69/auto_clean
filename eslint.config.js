@@ -34,7 +34,7 @@ export default [
     "no-use-before-define": "off",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": "off",
-    "max-len": ["error", { "code": 120 }],
+    "max-len": ["error", { "code": 250 }],
     "react/destructuring-assignment": ["off"],
     "import/prefer-default-export": "off",
     "react/no-did-update-set-state": "off",

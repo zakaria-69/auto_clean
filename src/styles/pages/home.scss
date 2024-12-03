@@ -1,201 +1,270 @@
-.home_container{
-    &_header{
+.home_container {
+  &_header {
+    display: flex;
+    height: 10vw;
+
+    &_logo {
+      width: 10%;
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         display: flex;
-        height: 10vw;
+      }
+    }
 
-        &_logo{
-            width: 10%;
-            display: flex;
-            align-items: center;
+    &_left_nav {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
 
-            & img{
+      & nav {
+        width: 100%;
+
+        & ul {
+          display: flex;
+          align-items: center;
+          height: 100%;
+
+          & li {
+            margin: 0 1rem;
+
+            a {
+              position: relative;
+              display: inline-block;
+              color: white;
+              text-decoration: none;
+              overflow: hidden;
+              font-size: 1.5rem;
+              font-weight: bold;
+              background: $reverse_linear_gradient_text;
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+
+              &:hover {
+                background: $linear_gradient_text;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+              }
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
-                display: flex;    
-            }
-        }
-        &_left_nav{
-            width: 70%;
-            display: flex;
-            flex-direction: row;
+                background: $linear_gradient_text;
+                z-index: 1;
+                pointer-events: none;
+                mix-blend-mode: lighten;
+              }
 
-            & nav{
-                width: 100%;
+              &:hover::before {
+                animation: wash-text 1.5s ease-in-out forwards;
 
-                & ul{
-                    display: flex;
-                    align-items: center;
-                    height: 100%;
-                    
-                    & li{
-                        margin: 0 1rem;
-
-                        a {
-                            position: relative;
-                            display: inline-block;
-                            color: white;
-                            text-decoration: none;
-                            overflow: hidden;
-                            font-size: 1.5rem;
-                            font-weight: bold;
-                            background: $reverse_linear_gradient_text;
-                            background-clip: text; 
-                            -webkit-background-clip: text; 
-                            color: transparent; 
-
-                            &:hover{
-                                background: $linear_gradient_text;
-                                background-clip: text; 
-                            -webkit-background-clip: text; 
-                            color: transparent; 
-                            }
-                            
-                            &::before {
-                              content: '';
-                              position: absolute;
-                              top: 0;
-                              left: -100%; 
-                              width: 100%;
-                              height: 100%;
-                              background: $linear_gradient_text;
-                              z-index: 1;
-                              pointer-events: none; 
-                              mix-blend-mode: lighten; 
-                            }
-                          
-                            &:hover::before {
-                              animation: wash-text 1.5s ease-in-out forwards;
-                              
-                            }
-                          }
-                    }
-                } 
-            }
-        }
-        &_social_medias {
-            width: 20%;
-            display: flex;
-          
-            & nav {
-              width: 100%;
-          
-              & ul {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                justify-content: flex-end;
-          
-                & li {
-                  margin: 0 1rem;
-          
-                  & a {
-                    padding: 10px 10px 10px 10px;
-                    font-size: 1.9rem;
-                    position: relative;
-                    color : $primary_color; 
-                    display: inline-block;
-                    overflow: hidden;
-                    background: $linear_gradient_text;
-                    background-clip: text; 
-                    -webkit-background-clip: text; 
-          
-                    &::before {
-                      content: '';
-                      position: absolute;
-                      top: 0;
-                      left: -100%; 
-                      width: 100%;
-                      height: 100%;
-                      background: $linear_gradient_text;
-                      z-index: 1;
-                      transition: none;
-                      pointer-events: none;
-                      mix-blend-mode: screen; 
-                    }
-          
-                    &:hover::before {
-                      animation: wash-icon 1s ease-in-out forwards;
-                    }
-          
-                    &:hover {
-                      color : $primary_color;
-                    }
-                  }
-                }
               }
             }
           }
-    } // fin header
-
-    .decouverte_formule_container{
-        margin-top: 30px;
-        height: 70vh;
-        width: 80%;
-        margin: 30px auto 0 auto;
-       
-        &_card{
-            position: relative;
-            justify-content: center;
-            align-self: center;
-            border-radius: 5%;
-            img{
-                height: 100%;
-                width: 100%;
-                min-width: 100%;
-                min-height: 100%;
-                object-fit: cover;
-                border-radius: 5%;
-                &:hover{
-                    // filter: blur(2px);
-                }
-            }
-            &_overlay{
-                opacity: 1;
-            }
-
-            &_link{
-                position: absolute;
-                top: 25%;
-                left: 3.7%;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                font-size: 1.5rem;
-                font-weight: 600;
-                cursor: pointer;
-                z-index: 2;
-                transition: background-color 1s ease;
-                color: $secondary_color;
-                background: $linear_gradient_text;
-                color: black;
-
-                    &:hover{
-                        background: $reverse_linear_gradient_text;
-                        color: black;
-                    }
-                    &:active{
-                        background: $linear_gradient_text;
-                        color: white;
-                    }
-            }
-            &_text{
-                position: absolute;
-                top: 5%;
-                left: 2%;
-                border: none;
-                border-radius: 5px;
-                font-size: 5rem;
-                z-index: 2;
-                background-color: $reverse_linear_gradient_text;
-                background: $linear_gradient_text;
-                background-clip: text; 
-                -webkit-background-clip: text; 
-                color: transparent; 
-                text-transform: italic;
-                text-decoration: underline;
-            }
         }
+      }
     }
-}
 
+    &_social_medias {
+      width: 20%;
+      display: flex;
+      // border: solid red 2px;
+      margin-right: 140px;
+
+      & nav {
+        width: 100%;
+
+        & ul {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          justify-content: flex-start;
+
+          & li {
+            margin: 0 1rem;
+
+            & a {
+              padding: 10px 10px 10px 10px;
+              font-size: 1.9rem;
+              position: relative;
+              color: $primary_color;
+              display: inline-block;
+              overflow: hidden;
+              background: $linear_gradient_text;
+              background-clip: text;
+              -webkit-background-clip: text;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: $linear_gradient_text;
+                z-index: 1;
+                transition: none;
+                pointer-events: none;
+                mix-blend-mode: screen;
+              }
+
+              &:hover::before {
+                animation: wash-icon 1s ease-in-out forwards;
+              }
+
+              &:hover {
+                color: $primary_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }// end header 
+  
+  // start decouverte formule container
+
+  .decouverte_formule_container {
+    margin-top: 2rem;
+    // height: 70vh;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+
+    &_card {
+      position: relative;
+      justify-content: center;
+      align-self: center;
+      border-radius: 5%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+      }
+
+      &_textAndLink {
+        position: absolute;
+        top: 2%;
+        padding: 0 1.5rem;
+
+        &_link {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          cursor: pointer;
+          z-index: 2;
+          transition: background-color 1s ease;
+          color: $secondary_color;
+          background: $linear_gradient_text;
+          color: black;
+
+          &:hover {
+            background: $reverse_linear_gradient_text;
+            color: black;
+          }
+
+          &:active {
+            background: $linear_gradient_text;
+            color: white;
+          }
+        }
+
+        &_text {
+          border: none;
+          border-radius: 5px;
+          font-size: 5rem;
+          z-index: 2;
+          background-color: $reverse_linear_gradient_text;
+          background: $linear_gradient_text;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          text-transform: italic;
+          text-decoration: underline;
+        }
+      }
+    }
+  }// end decouverte formule container
+
+  //start section description reviews 
+
+  .description_reviews_container {
+    margin: 10rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+    &_subcontainer_description {
+      width: 70%;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      @include leftCadre;
+
+      &_sentence_hook {
+        background: $reverse_linear_gradient_text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        ;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+
+    &_subcontainer_reviews {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include rightCadre;
+
+      &_title {
+        color: $secondary_color;
+        font-size: 2rem;
+        text-align: center;
+        @include linearGradientText;
+        margin-top: 2rem;
+
+      }
+
+      &_review {
+        color: $secondary_color;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        @include reverseLinearGradientText;
+      }
+
+      &_button {
+        padding-bottom: 2rem;
+        border: solid red 2px;
+        @include linkMedium;
+
+        &:hover {
+          @include linkHover;
+        }
+
+        &:active {
+          @include linkActive;
+        }
+      }
+    }
+  }
+
+}
