@@ -102,7 +102,7 @@ const Home = () => {
             Nos avis client
           </h2>
           <p className="description_reviews_container_subcontainer_reviews_review">
-            &quot; Très satisfait du résultat j&apos;ai recuperer mon véhucile
+            &quot; Très satisfait du résultat j&apos;ai recuperer mon véhicule
             comme neuf !&quot;{" "}
           </p>
           <a
@@ -118,7 +118,7 @@ const Home = () => {
         <div className="formules_picker_container_cards">
           <div className="formules_picker_container_cards_card formule_card_one">
             <h3 className="formules_picker_container_cards_card_title">
-            Éclat Serein
+            nouveau souffle de vie
             </h3>
             <p className="formules_picker_container_cards_card_price">à partir de 120€</p>
             <ul>
@@ -207,6 +207,37 @@ const Home = () => {
             
           </div>
         </section>
+      </section>
+      <section className="prestations_container">
+        <div className="prestations_container_title_container">
+        <h2>Prestations</h2>
+        <p>En plus de nos formules nous vous proposons aussi : </p>
+        </div>
+        
+        <div className="prestations_container_main_container">
+          <div className="prestations_container_main_container_top_container">
+            <h3>Lavage intérieur vapeur</h3>
+            <span>à partir de 100€</span>
+            <a href="#">Prendre rdv</a>
+          </div>
+          <div className="prestations_container_main_container_bottom_container">
+            <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_one">
+            <h3>Lavage vapeur</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
+            </p>
+            </div>
+            <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_two">
+            <h3>Tableau de bord microfibre</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
+            </p>
+            </div>
+            <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_three">
+            <h3>Aspiration siege et tapis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
+            </p>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
   );
