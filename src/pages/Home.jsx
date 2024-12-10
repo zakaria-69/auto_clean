@@ -84,7 +84,10 @@ const Home = () => {
             <p className="decouverte_formule_container_card_textAndLink_text">
               Auto Clean
             </p>
-            <a href="#formule_picker" className="decouverte_formule_container_card_textAndLink_link">
+            <a
+              href="#formule_picker"
+              className="decouverte_formule_container_card_textAndLink_link"
+            >
               Découvrir nos formules
             </a>
           </div>
@@ -118,9 +121,11 @@ const Home = () => {
         <div className="formules_picker_container_cards">
           <div className="formules_picker_container_cards_card formule_card_one">
             <h3 className="formules_picker_container_cards_card_title">
-            nouveau souffle de vie
+              nouveau souffle de vie
             </h3>
-            <p className="formules_picker_container_cards_card_price">à partir de 120€</p>
+            <p className="formules_picker_container_cards_card_price">
+              à partir de 120€
+            </p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
@@ -137,9 +142,11 @@ const Home = () => {
           </div>
           <div className="formules_picker_container_cards_card formule_card_two">
             <h3 className="formules_picker_container_cards_card_title">
-            Performance Brillante
+              Performance Brillante
             </h3>
-            <p className="formules_picker_container_cards_card_price">à partir de 180€</p>
+            <p className="formules_picker_container_cards_card_price">
+              à partir de 180€
+            </p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
@@ -164,9 +171,11 @@ const Home = () => {
           </div>
           <div className="formules_picker_container_cards_card formule_card_three">
             <h3 className="formules_picker_container_cards_card_title">
-            Rénovation Premium
+              Rénovation Premium
             </h3>
-            <p className="formules_picker_container_cards_card_price">à partir de 240€</p>
+            <p className="formules_picker_container_cards_card_price">
+              à partir de 240€
+            </p>
             <ul>
               <li>
                 <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
@@ -192,28 +201,35 @@ const Home = () => {
         </div>
         <section className="formules_picker_container_informations">
           <div className="formules_picker_container_informations_prestationTime">
-            <FontAwesomeIcon icon={faTruck} color={fontCheckIconColor} className="fa-2x"/>
+            <FontAwesomeIcon
+              icon={faTruck}
+              color={fontCheckIconColor}
+              className="fa-2x"
+            />
             <div className="formules_picker_container_informations_prestationTime_titleAndText">
               <h3>Prestation</h3>
               <p>Durée de 1h max</p>
             </div>
           </div>
           <div className="formules_picker_container_informations_paiementMethods">
-            <FontAwesomeIcon icon={faCreditCard} color={fontCheckIconColor}className="fa-2x"/>
+            <FontAwesomeIcon
+              icon={faCreditCard}
+              color={fontCheckIconColor}
+              className="fa-2x"
+            />
             <div className="formules_picker_container_informations_paiementMethods_titleAndText">
-            <h3>Tout paiement</h3>
-            <p>CB, espèces</p>
+              <h3>Tout paiement</h3>
+              <p>CB, espèces</p>
             </div>
-            
           </div>
         </section>
       </section>
       <section className="prestations_container">
         <div className="prestations_container_title_container">
-        <h2>Prestations</h2>
-        <p>En plus de nos formules nous vous proposons aussi : </p>
+          <h2>Prestations</h2>
+          <p>Découvrez également nos préstations sur mesure : </p>
         </div>
-        
+
         <div className="prestations_container_main_container">
           <div className="prestations_container_main_container_top_container">
             <h3>Lavage intérieur vapeur</h3>
@@ -222,21 +238,78 @@ const Home = () => {
           </div>
           <div className="prestations_container_main_container_bottom_container">
             <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_one">
-            <h3>Lavage vapeur</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
-            </p>
+              <h3>Lavage vapeur</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eligendi totam alias ex cumque, adipisci iusto repellat, fuga
+                ipsam nesciunt doloribus veniam provident nobis error eveniet
+                harum quis in enim.
+              </p>
             </div>
             <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_two">
-            <h3>Tableau de bord microfibre</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
-            </p>
+              <h3>Tableau de bord microfibre</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eligendi totam alias ex cumque, adipisci iusto repellat, fuga
+                ipsam nesciunt doloribus veniam provident nobis error eveniet
+                harum quis in enim.
+              </p>
             </div>
             <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_three">
-            <h3>Aspiration siege et tapis</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi totam alias ex cumque, adipisci iusto repellat, fuga ipsam nesciunt doloribus veniam provident nobis error eveniet harum quis in enim.
-            </p>
+              <h3>Aspiration siege et tapis</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eligendi totam alias ex cumque, adipisci iusto repellat, fuga
+                ipsam nesciunt doloribus veniam provident nobis error eveniet
+                harum quis in enim.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="service_container">
+        <div className="service_container_title_container">
+          <h2>Services</h2>
+          <p>En plus de nos formules et préstations nous vous proposons aussi : </p>
+        </div>
+        <div className="service_container_subcontainer">
+          <div className="service_container_subcontainer_top_container service_card_one">
+            <h3>Traitements micro-rayures</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+              suscipit cupiditate nam nihil rem! Voluptas dolorum, officia nihil
+              reiciendis commodi iure nobis tempore ipsum obcaecati laborum.
+              Repellat eius amet et?
+            </p>
+            <a href="#"> Prendre rdv</a>
+          </div>
+          <div className="service_container_subcontainer_middle_container">
+            <div className="service_container_subcontainer_middle_container_left service_card_two">
+              <h3>Rénovations phares</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eligendi suscipit cupiditate nam nihil rem! Voluptas dolorum,
+                officia nihil reiciendis commodi iure nobis tempore ipsum
+                obcaecati laborum. Repellat eius amet et?
+              </p>
+              <a href="#"> Prendre rdv</a>
+            </div>
+            <div className="service_container_subcontainer_middle_container_right service_card_three">
+              <h3>Rénovations plastique</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eligendi suscipit cupiditate nam nihil rem! Voluptas dolorum,
+                officia nihil reiciendis commodi iure nobis tempore ipsum
+                obcaecati laborum. Repellat eius amet et?
+              </p>
+              <a href="#"> Prendre rdv</a>
+            </div>
+          </div>
+          <div className="service_container_subcontainer_bottom_container service_card_four">
+          <h3>Lavage éxterieur vapeur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi suscipit cupiditate nam nihil rem! Voluptas dolorum, officia nihil reiciendis commodi iure nobis tempore ipsum obcaecati laborum. Repellat eius amet et?</p>
+        <a href="#"> Prendre rdv</a>
+        </div>
         </div>
       </section>
     </section>
