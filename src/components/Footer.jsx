@@ -7,9 +7,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
-  faCheck,
-  faTruck,
-  faCreditCard,
+  faPhone,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -60,16 +59,21 @@ const Footer = () => {
         <div className="footer_container_contact_list">
         <ul>
           <li>
-            <a href="tel:+337824797">+337824797</a>
+            <a href="tel:+337824797">
+              <FontAwesomeIcon icon={faPhone} className="footer_container_contact_icon"/>
+              <span>+337824797</span>
+              </a>
           </li>
           <li>
             <a href="mailto:ladjrafi_zakaria@yahoo.com">
-              Ladjrafi_zakaria@yahoo.com
+            <FontAwesomeIcon icon={faEnvelope} className="footer_container_contact_icon" />
+              <span>ladjrafi_zakaria@yahoo.com</span>
             </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/QkEyiVP8tW8Jwnvv8" target="_blank">
-              Lyon
+            <FontAwesomeIcon icon={faHome} className="footer_container_contact_icon"/>
+              <span>Lyon</span>
             </a>
           </li>
         </ul>
