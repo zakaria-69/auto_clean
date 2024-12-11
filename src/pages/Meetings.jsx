@@ -19,7 +19,10 @@ const Meetings = () => {
           <div className="meetings_container_subcontainer_card_container_card">
             <h2>Lyon</h2>
             <p>Lyon 69000</p>
+            <div  className="meetings_container_subcontainer_card_container_card_calendlyLink">
             <CalendlyLink />
+            </div>
+            
           </div>
           <div className="meetings_container_subcontainer_operator">
             <p>Chez zakaria</p>
