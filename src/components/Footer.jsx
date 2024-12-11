@@ -5,11 +5,7 @@ import {
   faSnapchat,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faPhone,
-  faHome,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -57,50 +53,62 @@ const Footer = () => {
       <div className="footer_container_contact">
         <h3>Contact</h3>
         <div className="footer_container_contact_list">
-        <ul>
-          <li>
-            <a href="tel:+337824797">
-              <FontAwesomeIcon icon={faPhone} className="footer_container_contact_icon"/>
-              <span>+337824797</span>
+          <ul>
+            <li>
+              <a href="tel:+337824797">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="footer_container_contact_icon"
+                />
+                <span>+337824797</span>
               </a>
-          </li>
-          <li>
-            <a href="mailto:ladjrafi_zakaria@yahoo.com">
-            <FontAwesomeIcon icon={faEnvelope} className="footer_container_contact_icon" />
-              <span>ladjrafi_zakaria@yahoo.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/QkEyiVP8tW8Jwnvv8" target="_blank">
-            <FontAwesomeIcon icon={faHome} className="footer_container_contact_icon"/>
-              <span>Lyon</span>
-            </a>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <a href="mailto:ladjrafi_zakaria@yahoo.com">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="footer_container_contact_icon"
+                />
+                <span>ladjrafi_zakaria@yahoo.com</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/QkEyiVP8tW8Jwnvv8"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faHome}
+                  className="footer_container_contact_icon"
+                />
+                <span>Lyon</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="footer_container_schedules">
-      <h3>Horaires</h3>
+        <h3>Horaires</h3>
         <ol>
-            <li>Lundi : 9h - 19h</li>
-            <li>Mardi : 9h - 19h</li>
-            <li>Mercredi : 9h - 19h</li>
-            <li>Jeudi : 9h - 19h</li>
-            <li>Vendredi : 9h - 19h</li>
-            <li>Samedi : 9h - 19h</li>
-            <li>Dimanche : 9h - 19h</li>
+          <li>Lundi : 9h - 19h</li>
+          <li>Mardi : 9h - 19h</li>
+          <li>Mercredi : 9h - 19h</li>
+          <li>Jeudi : 9h - 19h</li>
+          <li>Vendredi : 9h - 19h</li>
+          <li>Samedi : 9h - 19h</li>
+          <li>Dimanche : 9h - 19h</li>
         </ol>
       </div>
       <div className="footer_container_map">
-  <iframe
-    // eslint-disable-next-line max-len
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44538.52695156109!2d4.793930673298822!3d45.75800318058034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon!5e0!3m2!1sfr!2sfr!4v1733871758989!5m2!1sfr!2sfr"
-    style={{ border: 0 }}
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-</div>
+        <iframe
+          // eslint-disable-next-line max-len
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44538.52695156109!2d4.793930673298822!3d45.75800318058034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon!5e0!3m2!1sfr!2sfr!4v1733871758989!5m2!1sfr!2sfr"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
     </footer>
   );
 };
