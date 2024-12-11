@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../src/assets/img/logo_auto_clean.avif"
+import logo from "../../src/assets/img/logo_lavage_auto.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,6 +11,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+
+    return(
 <header className="home_container_header">
         <div className="home_container_header_logo">
           <a href="/">
@@ -70,5 +72,6 @@ const Header = () => {
           </nav>
         </div>
       </header>
+    )
 }
 export default Header;
