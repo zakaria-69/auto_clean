@@ -19,7 +19,7 @@ const Description = () => {
             comme neuf !&quot;{" "}
           </p>
           <a
-            href="#"
+            href="/"
             className="description_reviews_container_subcontainer_reviews_button"
           >
             Découvrir plus d&apos;avis
