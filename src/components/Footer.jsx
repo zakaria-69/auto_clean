@@ -22,22 +22,22 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
-                <a href="" className="navLink header_accueil">
+                <a href="#" className="navLink header_accueil">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a href="" className="navLink header_meetings">
+                <a href="#" className="navLink header_meetings">
                   <FontAwesomeIcon icon={faSnapchat} />
                 </a>
               </li>
               <li>
-                <a href="" className="navLink header_contact">
+                <a href="#" className="navLink header_contact">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href="" className="navLink header_city">
+                <a href="#" className="navLink header_city">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
