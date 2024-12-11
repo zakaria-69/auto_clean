@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../src/assets/img/logo_lavage_auto.png";
 import car_washed from "../../src/assets/img/clean_white_car2.jpeg";
+import Footer from "../components/footer";
 
 const Home = () => {
   const fontCheckIconColor = "#00aaff";
@@ -312,6 +313,7 @@ const Home = () => {
         </div>
         </div>
       </section>
+      <Footer />
     </section>
   );
 };
