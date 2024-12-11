@@ -14,8 +14,6 @@ import {
 
 const Footer = () => {
   return (
-    <>
-    {/* <hr /> */}
     <footer className="footer_container">
       <div className="footer_container_logoAndSocials">
         <a href="/">
@@ -100,7 +98,6 @@ const Footer = () => {
   />
 </div>
     </footer>
-    </>
   );
 };
 
