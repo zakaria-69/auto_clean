@@ -19,14 +19,15 @@
         flex-direction: column;
         justify-content: center;
         margin: 0;
-        padding: 0;
+        // padding: 0;
+        padding-left: 2rem;
 
-        & a{
+        // & a{
 
-            & img{
+             // & img{
 
-            }
-        }   
+            // }
+        // }   
 
         &_medias{
             // border: solid green 2px;
@@ -112,7 +113,7 @@
                     // border: solid red 2px;
                     & a{
                         // padding: 10px 10px 10px 10px;
-                        font-size: 0.9rem;
+                        font-size: 1.2rem;
                         position: relative;
                         color: $primary_color;
                         display: inline-block;
@@ -168,6 +169,7 @@
                 margin: 0 1rem;
                 padding: 0.7rem;
                 @include reverseLinearGradientText;
+                font-size: 1.2rem;
             }
         }
     }
@@ -193,6 +195,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-right: 2rem;
         
 
         & iframe{
