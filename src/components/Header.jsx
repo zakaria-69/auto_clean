@@ -20,22 +20,22 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#" className="navLink header_accueil">
+              <a href="/" className="navLink header_accueil">
                 Accueil
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_meetings">
+              <a href="/meetings" className="navLink header_meetings">
                 Rendez-vous
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_contact">
+              <a href="/contact" className="navLink header_contact">
                 Contact
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_city">
+              <a href="/informations" className="navLink header_city">
                 Lyon
               </a>
             </li>
