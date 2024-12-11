@@ -2,5 +2,11 @@
 @import './utils/_animations';
 @import './utils/_mixins';
 @import './_init';
+@import './layout/header.scss';
 @import './pages/home.scss';
 @import './layout/footer.scss';
+@import './layout/Home/decouverte.scss';
+@import './layout/Home/descritpion.scss';
+@import './layout/Home/formulesPicker.scss';
+@import './layout/Home/prestation.scss';
+@import './layout/Home/services.scss';
