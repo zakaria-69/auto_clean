@@ -89,7 +89,7 @@
 @mixin leftCadre{
     border-top: double rgb(78, 206, 248) 4px;
         border-bottom: double rgb(78, 206, 248) 4px;
-        border-left: double rgb(78, 206, 248) 4px;
+        // border-left: double rgb(78, 206, 248) 4px;
         border-radius: 25px;
         padding : 5px;
 }
@@ -97,7 +97,7 @@
 @mixin rightCadre {
     border-top: double rgb(78, 206, 248) 4px;
         border-bottom: double rgb(78, 206, 248) 4px;
-        border-right: double rgb(78, 206, 248) 4px;
+        // border-right: double rgb(78, 206, 248) 4px;
         border-radius: 25px;
         padding : 5px;
 }
