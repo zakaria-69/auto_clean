@@ -1,0 +1,92 @@
+.meetings_container {
+    color: white;
+
+    &_subcontainer {
+        width: 80%;
+        margin: 1.2rem auto 6rem auto;
+
+        &_titleAndText {
+            text-align: center;
+
+            & h1 {
+                @include sections_title;
+                @include linearGradientText;
+                @include textUnderline;
+            }
+
+            & p {
+                @include linearGradientText;
+                font-size: 1.5rem;
+            }
+
+            & span {
+                font-size: 1.4rem;
+                @include linearGradientText;
+            }
+        }
+
+        &_card_container {
+            width: 50%;
+            margin: 3% auto;
+            border-radius: 15px;
+
+            &_card {
+                text-align: center;
+                padding: 2rem 0;
+
+                & h2 {
+                    font-size: 3.5rem;
+                    padding: 1rem 0;
+                    @include reverseLinearGradientText;
+                    font-style: italic;
+                }
+
+                & p {
+                    font-size: 2rem;
+                    padding: 2rem 0;
+                    margin: 2rem auto;
+                    @include reverseLinearGradientText;
+                    // border: solid red 4px;
+                    font-style: italic;
+                }
+
+                & a {
+                    @include linkMedium;
+
+                    &:hover {
+                        @include linkHover;
+                        @include box_shadow_buttons;
+                    }
+
+                    &:active {
+                        @include linkActive;
+                    }
+                }
+            }
+        }
+
+        &_operator {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 15px;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            @include reverseLinearGradientText;
+
+            & p {
+                @include reverseLinearGradientText;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.meetings_card_one {
+    @include overlayImgBackround;
+}
+
+.meetings_card_one {
+    background-image: url('../../src/assets/img/meetings_auto_clean.jpg');
+
+}
