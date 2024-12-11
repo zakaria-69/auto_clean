@@ -43,15 +43,13 @@
 
                 & p {
                     font-size: 2rem;
-                    padding: 2rem 0;
-                    margin: 2rem auto;
+                    margin: 3rem auto 5rem;
                     @include reverseLinearGradientText;
-                    // border: solid red 4px;
                     font-style: italic;
                 }
 
                 & a {
-                    @include linkMedium;
+                    @include linkMedium;           
 
                     &:hover {
                         @include linkHover;
@@ -61,6 +59,10 @@
                     &:active {
                         @include linkActive;
                     }
+                }
+
+                &_calendlyLink{
+                    margin: 3rem auto 2rem;
                 }
             }
         }
