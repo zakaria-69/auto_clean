@@ -50,8 +50,7 @@
             @include linkActive;
           }
         }
-        
-
+ 
       &_top_container{ 
         padding: 2rem 1rem;
         border-radius: 15px;
@@ -65,15 +64,13 @@
           & p{
             margin: 2rem auto;
             width: 70%;
-          }
-        
+          }  
       }
 
       &_middle_container{
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0;
-        
+        padding: 2rem 0;  
 
         &_left{
           width: 49%;
@@ -126,13 +123,10 @@
     .service_card_one {
       background-image: url('../../src/assets/img/microRayures-clean.avif');
       background-position:  40% 5;
-      
-
     }
 
     .service_card_two {
       background-image: url('../../src/assets/img/services_cars_ferrari.jpg');
-
     }
 
     .service_card_three {
