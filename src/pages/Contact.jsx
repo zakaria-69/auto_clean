@@ -139,21 +139,29 @@ const Contact = () => {
             <FontAwesomeIcon icon={faEnvelope} className="contact_icon" />
             Email :
           </span>
-          <p>ladjrafi_zakaria@yahoo.com</p>
+          <p>
+            <a href="mailto:ladjrafi_zakaria@yahoo.com" target="_blank">
+              ladjrafi_zakaria@yahoo.com
+            </a>
+          </p>
         </div>
         <div className="contact_container_infos_phone">
           <span>
             <FontAwesomeIcon icon={faPhone} className="contact_icon" />
             Téléphone :
           </span>
-          <p>+33 7 82 47 97 74</p>
+          <p>
+            <a href="tel:+33782479774" target="_blank">+33 7 82 47 97 74</a>
+          </p>
         </div>
         <div className="contact_container_infos_adress">
           <span>
             <FontAwesomeIcon icon={faHome} className="contact_icon" />
             Adresse :
           </span>
-          <p>Lyon</p>
+          <p>
+            <a href="https://maps.app.goo.gl/Qu5WrAk7HbJ9dWxz5" target="_blank">Lyon</a>
+          </p>
         </div>
       </div>
       <Footer />
