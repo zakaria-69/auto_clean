@@ -93,7 +93,7 @@
 
             & button{
                 @include linkMedium;
-                width: 15%;
+                width: 10rem;
 
 
                 &:hover{
@@ -111,7 +111,6 @@
     }
     // hide labels but keep it for googles readers robots 
     .screen_readers-only{
-        border: solid red 2px;
         position: absolute;
         width: 1px;
         height: 1px;
@@ -122,6 +121,40 @@
         clip-path: inset(50%);
         white-space: nowrap;
     }
+ 
+    &_infos{
+        // border: solid red 2px;
+        border-top: double 4px #00aaff;
+        border-bottom: double 4px #00aaff;
+        border-radius: 15px;
+        display: flex;
+        width: 80%;
+        // margin: 8rem auto 10rem auto;    // aspect visuel encore a définir
+        margin: 0 auto 8rem auto;
+        padding: 10rem  0;
+        
+        justify-content: space-between;
 
-    
+        &_email{
+            @include contactInfos;
+            align-items: flex-start; 
+        }
+
+        &_phone{
+            @include contactInfos; 
+        }
+
+        &_adress{
+            @include contactInfos;
+            align-items: flex-end;   
+        }
+    }
+
+    .contact_icon{
+        font-size: 1.6rem;
+        color:  #00aaff;
+        margin-right: 15px;
+        text-decoration: underline solid blue 4px;
+        
+    }
 }
