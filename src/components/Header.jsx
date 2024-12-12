@@ -36,7 +36,7 @@ const Header = () => {
             </li>
             <li>
               <a href="/informations" className="navLink header_city">
-                Lyon
+                infos
               </a>
             </li>
           </ul>
