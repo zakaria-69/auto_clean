@@ -12,6 +12,7 @@
                 @include sections_title;
                 @include linearGradientText;
                 @include textUnderline;
+                margin-bottom: 2rem;
             }
 
             & p {
