@@ -5,6 +5,7 @@ import {
   faTruck,
   faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
+import CalendlyLink from "../calendlyLink";
 
 const FormulePicker = () => {
   const fontCheckIconColor = "#00aaff";
@@ -30,7 +31,7 @@ const FormulePicker = () => {
             </li>
           </ul>
           <div className="formules_picker_container_cards_card_link">
-            <a href="#">Prendre rendez-vous</a>
+            <CalendlyLink />
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_two">
@@ -59,7 +60,7 @@ const FormulePicker = () => {
             </li>
           </ul>
           <div className="formules_picker_container_cards_card_link">
-            <a href="#">Prendre rendez-vous</a>
+          <CalendlyLink />
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_three">
@@ -88,7 +89,7 @@ const FormulePicker = () => {
             </li>
           </ul>
           <div className="formules_picker_container_cards_card_link">
-            <a href="#">Prendre rendez-vous</a>
+          <CalendlyLink />
           </div>
         </div>
       </div>

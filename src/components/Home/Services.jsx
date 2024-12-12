@@ -1,3 +1,5 @@
+import CalendlyLink from "../calendlyLink";
+
 const Services = () => {
   return (
     <section className="service_container">
@@ -16,7 +18,7 @@ const Services = () => {
             reiciendis commodi iure nobis tempore ipsum obcaecati laborum.
             Repellat eius amet et?
           </p>
-          <a href="#"> Prendre rdv</a>
+          <CalendlyLink />
         </div>
         <div className="service_container_subcontainer_middle_container">
           <div className="service_container_subcontainer_middle_container_left service_card_two">
@@ -27,7 +29,7 @@ const Services = () => {
               reiciendis commodi iure nobis tempore ipsum obcaecati laborum.
               Repellat eius amet et?
             </p>
-            <a href="#"> Prendre rdv</a>
+            <CalendlyLink />
           </div>
           <div className="service_container_subcontainer_middle_container_right service_card_three">
             <h3>Rénovations plastique</h3>
@@ -37,7 +39,7 @@ const Services = () => {
               reiciendis commodi iure nobis tempore ipsum obcaecati laborum.
               Repellat eius amet et?
             </p>
-            <a href="#"> Prendre rdv</a>
+            <CalendlyLink />
           </div>
         </div>
         <div className="service_container_subcontainer_bottom_container service_card_four">
@@ -48,7 +50,7 @@ const Services = () => {
             reiciendis commodi iure nobis tempore ipsum obcaecati laborum.
             Repellat eius amet et?
           </p>
-          <a href="#"> Prendre rdv</a>
+          <CalendlyLink />
         </div>
       </div>
     </section>

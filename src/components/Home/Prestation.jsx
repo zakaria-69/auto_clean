@@ -1,3 +1,5 @@
+import CalendlyLink from "../calendlyLink";
+
 const Prestation = () => {
   return (
     <section className="prestations_container">
@@ -10,7 +12,7 @@ const Prestation = () => {
         <div className="prestations_container_main_container_top_container">
           <h3>Lavage intérieur vapeur</h3>
           <span>à partir de 100€</span>
-          <a href="#">Prendre rdv</a>
+          <CalendlyLink />
         </div>
         <div className="prestations_container_main_container_bottom_container">
           <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_one">
