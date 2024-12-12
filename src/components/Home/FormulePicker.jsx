@@ -56,7 +56,7 @@ const FormulePicker = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Lavage intérieur et éxterieur vapeur</p>
+              <p>Lavage éxterieur vapeur</p>
             </li>
           </ul>
           <div className="formules_picker_container_cards_card_link">
