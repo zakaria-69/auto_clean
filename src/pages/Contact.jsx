@@ -5,6 +5,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 
 // import dotenv from 'dotenv';
 
@@ -130,6 +132,29 @@ const Contact = () => {
           </div>
           <button type="submit">Envoyer</button>
         </form>
+      </div>
+      <div className="contact_container_infos">
+        <div className="contact_container_infos_email">
+          <span>
+            <FontAwesomeIcon icon={faEnvelope} className="contact_icon" />
+            Email :
+          </span>
+          <p>ladjrafi_zakaria@yahoo.com</p>
+        </div>
+        <div className="contact_container_infos_phone">
+          <span>
+            <FontAwesomeIcon icon={faPhone} className="contact_icon" />
+            Téléphone :
+          </span>
+          <p>+33 7 82 47 97 74</p>
+        </div>
+        <div className="contact_container_infos_adress">
+          <span>
+            <FontAwesomeIcon icon={faHome} className="contact_icon" />
+            Adresse :
+          </span>
+          <p>Lyon</p>
+        </div>
       </div>
       <Footer />
     </section>
