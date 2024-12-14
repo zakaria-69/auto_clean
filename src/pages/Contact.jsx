@@ -133,6 +133,7 @@ const Contact = () => {
           <button type="submit">Envoyer</button>
         </form>
       </div>
+      <hr />
       <div className="contact_container_infos">
         <div className="contact_container_infos_email">
           <span>
