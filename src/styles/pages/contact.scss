@@ -6,7 +6,7 @@
         width: 80%;
             margin: 0 auto;
             // border: solid yellow 2px;
-            margin: 1.2rem auto 8rem auto;
+            margin: 1.2rem auto 4rem auto;
 
         &_titleAndText{
             color: white;
@@ -124,14 +124,14 @@
  
     &_infos{
         // border: solid red 2px;
-        border-top: double 4px #00aaff;
-        border-bottom: double 4px #00aaff;
+        // border-top: double 4px #00aaff;
+        // border-bottom: double 4px #00aaff;
         border-radius: 15px;
         display: flex;
         width: 80%;
         // margin: 8rem auto 10rem auto;    // aspect visuel encore a définir
-        margin: 0 auto 8rem auto;
-        padding: 10rem  0;
+        margin: 0 auto;
+        padding: 4rem 0 6rem 0;
         
         justify-content: space-between;
 
@@ -156,5 +156,15 @@
         margin-right: 15px;
         text-decoration: underline solid blue 4px;
         
+    }
+
+    & hr{
+        width: 20%;
+        margin: 0 auto;
+        border-radius: 15px;
+        border: none;
+        height: 2px;
+        background-color: #00aaff;
+        border-radius: 15px;
     }
 }
