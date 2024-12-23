@@ -1,4 +1,4 @@
-import logo from "../../src/assets/img/logo_lavage_auto.png";
+import logo from "../../src/assets/img/detourer_logo_auto_clean.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
