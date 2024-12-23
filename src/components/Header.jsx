@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../src/assets/img/detourer_logo_auto_clean.png";
-import logo2 from "../../src/assets/img/logo_auto_clean.avif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,7 +10,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <header className="home_container_header">
+    <header className="home_container_header"> 
       <div className="home_container_header_logo">
         <a href="/">
           <img src={logo} alt="logo de voiture qui brille" />
@@ -69,6 +68,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+
     </header>
   );
 };
