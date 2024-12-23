@@ -1,0 +1,157 @@
+.information_container {
+    color: white;
+
+    & p {
+        @include linearGradientText;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    &_subcontainer {
+        @include bottomCadre;
+        @include leftCadre;
+        @include rightCadre;
+        width: 80%;
+        margin: 0 auto;
+        margin: 1.2rem auto 4rem auto;
+        padding: 1rem 15px;
+        border-radius: 15px;
+
+        & h1 {
+            @include sections_title;
+            @include linearGradientText;
+            @include textUnderline;
+            margin-bottom: 2rem;
+        }
+
+        &_whereAndWhen {
+            font-size: 2rem !important;
+        }
+
+        &_infosContainer {
+            display: flex;
+
+            &_contact {
+                width: 50%;
+
+                &_phone {
+                    padding: 2rem 15px;
+                    font-size: 1.5rem;
+                    display: flex;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+
+                    & a {
+                        @include clickableLink;
+                        margin-top: 5px;
+                    }
+                }
+
+                &_adress {
+                    padding: 2rem 15px;
+                    font-size: 1.5rem;
+                    display: flex;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+
+                    & a {
+                        @include clickableLink;
+                        margin-top: 5px;
+                    }
+                }
+
+                &_email {
+                    padding: 2rem 15px;
+                    font-size: 1.5rem;
+                    display: flex;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+
+                    & a {
+                        @include clickableLink;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            &_schedule {
+                width: 50%;
+
+                &_day {
+                    @include bottomCadre;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    margin: 0.5rem auto;
+                    padding: 0.2rem 0;
+                    font-weight: bold;
+
+                    & li {
+                        display: flex;
+
+                        & p {
+                            width: 50%;
+                        }
+
+                        & p:first-child {
+                            margin-left: 15px;
+                        }
+
+                        & p:last-child {
+                            text-align: end;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .information_appointment {
+        @include leftCadre;
+        @include rightCadre;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 4rem 0 5rem 0;
+        border-radius: 15px;
+        margin-bottom: 5rem;
+
+        & h2 {
+            @include subSections_title;
+            @include linearGradientText;
+        }
+
+        & p {
+            padding: 1.5rem 0;
+        }
+
+        & a {
+            @include linkMedium;
+        }
+
+        & a:hover {
+            @include linkHover;
+        }
+
+        & a:active {
+            @include linkActive;
+        }
+    }
+
+    .about_me{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        & p{
+            color: red;
+        }
+    }
+
+    .icon{
+            font-size: 1.5rem;
+            color: #00aaff;
+            transform: translateY(9px);
+            margin-right: 10px;
+    }
+}
