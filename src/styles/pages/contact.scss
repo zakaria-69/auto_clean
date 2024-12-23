@@ -1,70 +1,65 @@
-.contact_container{
-    // border: solid red 2px;
+.contact_container {
     color: white;
-    
-    &_subcontainer{
-        width: 80%;
-            margin: 0 auto;
-            // border: solid yellow 2px;
-            margin: 1.2rem auto 4rem auto;
 
-        &_titleAndText{
+    &_subcontainer {
+        width: 80%;
+        margin: 0 auto;
+        margin: 1.2rem auto 4rem auto;
+
+        &_titleAndText {
             color: white;
 
-
-            & h1{
+            & h1 {
                 @include sections_title;
                 @include linearGradientText;
                 @include textUnderline;
                 margin-bottom: 2rem;
             }
 
-            & p{
+            & p {
                 @include linearGradientText;
                 font-size: 1.5rem;
                 margin: 1rem;
             }
-            
         }
 
-        &_form_container{
+        &_form_container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin: 2rem auto;
 
-            &_firstName{
-                // border: solid blue 2px;
+            &_firstName {
                 min-width: 50%;
-                padding:0.5rem;
-            }  
-            
-            &_lastName{
-                // border: solid red 2px;
+                padding: 0.5rem;
+            }
+
+            &_lastName {
                 min-width: 50%;
-                padding:0.5rem;
+                padding: 0.5rem;
 
             }
-            &_email{
-                // border: solid purple 2px;
-                min-width: 100%;
-                padding:0.5rem;
-            }
-            &_message{
-                // border: solid green 2px;
-                min-width: 100%;
-                padding:0.5rem;
 
-                p{
+            &_email {
+                min-width: 100%;
+                padding: 0.5rem;
+            }
+
+            &_message {
+                min-width: 100%;
+                padding: 0.5rem;
+
+                p {
                     text-align: end;
                     font-size: 1.2rem;
                     @include reverseLinearGradientText;
                 }
             }
 
-            & input,textarea{
+            & input,
+            textarea {
                 width: 100%;
-                padding:1rem;
+                padding: 1rem;
                 max-height: 20rem;
                 max-width: 100%;
                 min-height: 3rem;
@@ -73,44 +68,46 @@
                 font-size: 1rem;
             }
 
-            & input:focus,textarea:focus{
-                background-color:  #00aaff;
+            & input:focus,
+            textarea:focus {
+                background-color: #00aaff;
                 color: white;
                 font-size: 1.5rem;
                 font-weight: 700;
             }
-            & input:focus::placeholder
-            ,textarea:focus::placeholder{
-                background-color:  #00aaff;
+
+            & input:focus::placeholder,
+            textarea:focus::placeholder {
+                background-color: #00aaff;
                 color: white;
                 font-size: 1.6rem;
                 font-weight: 700;
             }
 
-            & input::placeholder,textarea::placeholder{
-             font-size: 1.2rem
+            & input::placeholder,
+            textarea::placeholder {
+                font-size: 1.2rem
             }
 
-            & button{
+            & button {
                 @include linkMedium;
                 width: 10rem;
 
 
-                &:hover{
+                &:hover {
                     @include linkHover;
                     @include box_shadow_buttons;
                 }
 
-                &:active{
+                &:active {
                     @include linkActive;
                 }
             }
         }
-
-        
     }
+
     // hide labels but keep it for googles readers robots 
-    .screen_readers-only{
+    .screen_readers-only {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -121,44 +118,40 @@
         clip-path: inset(50%);
         white-space: nowrap;
     }
- 
-    &_infos{
-        // border: solid red 2px;
-        // border-top: double 4px #00aaff;
-        // border-bottom: double 4px #00aaff;
+
+    &_infos {
         border-radius: 15px;
         display: flex;
         width: 80%;
-        // margin: 8rem auto 10rem auto;    // aspect visuel encore a définir
         margin: 0 auto;
         padding: 4rem 0 6rem 0;
-        
+
         justify-content: space-between;
 
-        &_email{
+        &_email {
             @include contactInfos;
-            align-items: flex-start; 
+            align-items: flex-start;
         }
 
-        &_phone{
-            @include contactInfos; 
+        &_phone {
+            @include contactInfos;
         }
 
-        &_adress{
+        &_adress {
             @include contactInfos;
-            align-items: flex-end;   
+            align-items: flex-end;
         }
     }
 
-    .contact_icon{
+    .contact_icon {
         font-size: 1.6rem;
-        color:  #00aaff;
+        color: #00aaff;
         margin-right: 15px;
         text-decoration: underline solid blue 4px;
-        
+
     }
 
-    & hr{
+    & hr {
         width: 20%;
         margin: 0 auto;
         border-radius: 15px;
