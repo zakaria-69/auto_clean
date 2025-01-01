@@ -2,6 +2,7 @@
 @import './utils/_animations';
 @import './utils/_mixins';
 @import './_init';
+@import './base/themesHandler.scss';
 @import './layout/header.scss';
 @import './pages/home.scss';
 @import './layout/footer.scss';
