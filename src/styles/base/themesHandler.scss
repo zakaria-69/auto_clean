@@ -1,0 +1,183 @@
+// header
+
+.home_container_header_left_nav nav ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #00aaff, #ffffff, #00aaff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+
+/* Styles for header navigation sections dark theme */
+.dark-theme .home_container_header_left_nav nav ul li a {
+    color: transparent;
+    &:hover{
+    background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+        z-index: 1;
+        pointer-events: none;
+        mix-blend-mode: lighten;
+      }
+
+      &:hover::before {
+        animation: wash-text 1.5s ease-in-out forwards;
+      }
+}
+
+/* Styles for header navigation sections light theme */
+.light-theme .home_container_header_left_nav nav ul li a {
+    color: black;
+    background: none;
+
+    &:hover{
+    background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+        z-index: 1;
+        pointer-events: none;
+        mix-blend-mode: lighten;
+      }
+
+      &:hover::before {
+        animation: wash-text 1.5s ease-in-out forwards;
+      }
+}
+
+.home_container_header_social_medias a {
+    color: inherit;
+    font-size: 1.5rem; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+/* Styles for header navigation medias dark theme */
+.dark-theme .home_container_header_social_medias a {
+    color:  #00aaff; 
+    padding: 10px 10px 10px 10px;
+        font-size: 1.9rem;
+        position: relative;
+        color: rgb(78, 206, 248);
+        display: inline-block;
+        overflow: hidden;
+        background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        &:hover {
+            color: $primary_color;
+          }
+          
+        &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: -100%;
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+                  z-index: 1;
+                  transition: none;
+                  pointer-events: none;
+                  mix-blend-mode: screen;
+                }
+    
+                &:hover::before {
+                  animation: wash-icon 1s ease-in-out forwards;
+                }
+    
+}
+
+/* Styles for header navigation medias light theme  */
+.light-theme .home_container_header_social_medias a {
+    color: black; 
+    padding: 10px 10px 10px 10px;
+        font-size: 1.9rem;
+        position: relative;
+        color: black;
+        display: inline-block;
+        overflow: hidden;
+        background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        &:hover {
+            color: black;
+          }
+          
+        &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: -100%;
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+                  z-index: 1;
+                  transition: none;
+                  pointer-events: none;
+                  mix-blend-mode: screen;
+                }
+    
+                &:hover::before {
+                  animation: wash-icon 1s ease-in-out forwards;
+                }
+    
+}
+
+// decouverte
+
+.light-theme .decouverte_formule_container{
+
+    & p{
+        color: white;
+    }
+
+    & a{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        z-index: 2;
+        transition: background-color 1s ease;
+        color: $secondary_color;
+        background: white;
+        color: black;
+    }
+    & a:hover{
+        // filter: drop-shadow(0 4px rgb(78, 206, 248));
+        background: black;
+        color: white;
+        border: solid red 2px;
+    }
+    &:active {
+        // background: $linear_gradient_text;
+        background-color: white;
+        color: black;
+      }
+}
