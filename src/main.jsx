@@ -6,9 +6,11 @@ import Informations from './pages/Informations.jsx'
 import Contact from './pages/Contact.jsx'
 import Meetings from './pages/Meetings.jsx'
 import Home from './pages/Home.jsx'
+import { ThemeProvider } from './components/theme.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ThemeProvider>
     <BrowserRouter>
     <Routes>
       <Route path='/' exact element={<Home/>}/>
@@ -17,5 +19,6 @@ createRoot(document.getElementById('root')).render(
       <Route path='meetings' exact element={<Meetings />}/>
     </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   </StrictMode>,
 )

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Decouverte from "../components/Home/Decouverte";
@@ -6,10 +6,12 @@ import Description from "../components/Home/Description";
 import FormulePicker from "../components/Home/FormulePicker";
 import Prestation from "../components/Home/Prestation";
 import Services from "../components/Home/Services";
+import { ThemeContext } from "../components/theme";
 
 const Home = () => {
+   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <section>
+    <section style={{ backgroundColor: theme.background, color: theme.text }}>
       <Header />
       <Decouverte />
       <Description />

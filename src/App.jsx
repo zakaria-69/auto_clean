@@ -1,17 +1,17 @@
 import { useState } from 'react'
 
 
-function App() {
-  // const [count, setCount] = useState(0)
+// function App() {
+//   // const [count, setCount] = useState(0)
 
-  return (
+//   return (
     
-      <div>
-        <p>page main</p>
-        </div>
+//       <div>
+//         <p>page main</p>
+//         </div>
 
   
-  )
-}
+//   )
+// }
 
-export default App;
+// export default App;
