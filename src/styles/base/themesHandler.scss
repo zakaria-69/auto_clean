@@ -167,18 +167,20 @@
         // color: $secondary_color;
         background: white;
         color: black;
-    }
-    & a:hover{
-        filter: drop-shadow(4px 4px 4px white);
-        background: black;
-        color: white;
-        // box-shadow: 4px 4px 2px white;
-    }
-    &:active {
-        // background: $linear_gradient_text;
-        background-color: white;
-        color: black;
+
+        &:hover{
+          filter: drop-shadow(4px 4px 4px white);
+          background: black;
+          color: white;
+          // box-shadow: 4px 4px 2px white;
       }
+      &:active{
+        background: white;
+        color: black;
+        filter: drop-shadow(4px 4px 4px white);
+      }
+    }
+    
 }
 
 
@@ -223,9 +225,10 @@
     color: black;
     filter: drop-shadow(4px 4px 4px black);
 }
-&:active {
-    background-color: white;
-    color: black;
+& a:active {
+  background: black;
+  color: white;
+  filter: drop-shadow(4px 4px 4px black);
   }
 }
 
@@ -283,7 +286,7 @@
 
     &:active {
       background: white;
-      filter: drop-shadow(4px 4px 4px black);
+      filter: drop-shadow(4px 4px 4px white);
 
       & a{
         color: black;
@@ -306,5 +309,40 @@
 }
 
 // prestation
+.light-theme .prestations_container{
+
+  &_title_container p {
+    color: black !important;
+  }
+  
+  & h2 {
+    color: black;
+    text-decoration: underline double 3px black;
+  } 
+  & h3, p, span {
+  color: white;
+}
+
+&_main_container_top_container{
+  background: black;
+
+  & a{
+    background: white;
+    color: black;
+
+    &:hover{
+      background: black;
+    color: white;
+    filter: drop-shadow(4px 4px 4px white);
+    }
+    &:active{
+      background: white;
+      color: black;
+      filter: drop-shadow(4px 4px 4px white);
+    }
+  }
+}
+
+}
 
 
