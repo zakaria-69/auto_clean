@@ -23,13 +23,18 @@ export const ThemeContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(themes.dark); // initial theme dark
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("appTheme");
+    return savedTheme ? JSON.parse(savedTheme) : themes.light;
+  }); // initial theme light
 
   // update bodys properties when changes theme
   useEffect(() => {
     document.body.className = theme.bodyClass;
     document.body.style.backgroundColor = theme.background;
     document.body.style.color = theme.text;
+
+    localStorage.setItem("appTheme", JSON.stringify(theme));
   }, [theme]);
 
   const toggleTheme = () => {

@@ -95,9 +95,7 @@ const Informations = () => {
         <div className="information_appointment_subcontainer">
           <h2>Prendre rendez-vous</h2>
           <p>dans cet atelier</p>
-          {/* <a href="" target="_blank"> */}
             <CalendlyLink />
-          {/* </a> */}
         </div>
       </section>
       <div className="about_me">
