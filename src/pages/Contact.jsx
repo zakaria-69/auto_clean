@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -7,10 +7,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
+import { ThemeContext } from "../components/theme";
 
 // import dotenv from 'dotenv';
 
 const Contact = () => {
+  const {theme } = useContext(ThemeContext);
   const schema = yup
     .object({
       nom: yup.string().max(50).required("Veuillez saisir vôtre nom"),
@@ -137,7 +139,7 @@ const Contact = () => {
       <div className="contact_container_infos">
         <div className="contact_container_infos_email">
           <span>
-            <FontAwesomeIcon icon={faEnvelope} className="contact_icon" />
+            <FontAwesomeIcon icon={faEnvelope} color={theme.icon} className="contact_icon"  />
             Email :
           </span>
           <p>
@@ -148,7 +150,7 @@ const Contact = () => {
         </div>
         <div className="contact_container_infos_phone">
           <span>
-            <FontAwesomeIcon icon={faPhone} className="contact_icon" />
+            <FontAwesomeIcon icon={faPhone} color={theme.icon} className="contact_icon" />
             Téléphone :
           </span>
           <p>
@@ -157,7 +159,7 @@ const Contact = () => {
         </div>
         <div className="contact_container_infos_adress">
           <span>
-            <FontAwesomeIcon icon={faHome} className="contact_icon" />
+            <FontAwesomeIcon icon={faHome} color={theme.icon} className="contact_icon" />
             Adresse :
           </span>
           <p>

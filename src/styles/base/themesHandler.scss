@@ -611,3 +611,56 @@
   }
 
 }
+
+// contact page 
+
+.light-theme .contact_container{
+  & p, span{
+    color: black;
+  }
+  
+  // border: solid red 2px;
+
+  &_subcontainer{
+
+
+    &_titleAndText{
+      & h1{
+        color: black;
+        text-decoration: underline double 3px black;
+      }
+      & p{
+        font-style: italic;
+      }
+    }
+  }
+
+  & button{
+      background: black;
+      color: white;
+  
+      &:hover {
+        background: white;
+        color: black;
+        filter: drop-shadow(4px 4px 4px black);
+      }
+  
+      &:active {
+        background: black;
+        color: white;
+        filter: drop-shadow(4px 4px 4px black);
+      }
+    }
+
+    &_infos{
+      // border: solid red 2px;
+
+      & span, p , a {
+        color: black;
+      }
+    }
+
+    & hr{
+      background-color: black;
+    }
+  }
