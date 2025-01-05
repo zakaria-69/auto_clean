@@ -15,7 +15,7 @@
         padding-left: 2rem;
 
         & img{
-            width: 16rem;
+            width:10rem;
         }
 
         &_medias {
@@ -30,40 +30,40 @@
                     & li {
                         margin: 0 1rem;
 
-                        & a {
-                            padding: 10px 10px 10px 10px;
-                            font-size: 1.9rem;
-                            position: relative;
-                            color: $primary_color;
-                            display: inline-block;
-                            overflow: hidden;
-                            background: $linear_gradient_text;
-                            background-clip: text;
-                            -webkit-background-clip: text;
+                        // & a {
+                        //     padding: 10px 10px 10px 10px;
+                        //     font-size: 1.9rem;
+                        //     position: relative;
+                        //     color: $primary_color;
+                        //     display: inline-block;
+                        //     overflow: hidden;
+                        //     background: $linear_gradient_text;
+                        //     background-clip: text;
+                        //     -webkit-background-clip: text;
 
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                top: 0;
-                                left: -100%;
-                                width: 100%;
-                                height: 100%;
-                                background: $linear_gradient_text;
-                                z-index: 1;
-                                transition: none;
-                                pointer-events: none;
-                                mix-blend-mode: screen;
-                            }
+                        //     &::before {
+                        //         content: '';
+                        //         position: absolute;
+                        //         top: 0;
+                        //         left: -100%;
+                        //         width: 100%;
+                        //         height: 100%;
+                        //         background: $linear_gradient_text;
+                        //         z-index: 1;
+                        //         transition: none;
+                        //         pointer-events: none;
+                        //         mix-blend-mode: screen;
+                        //     }
 
-                            &:hover::before {
-                                animation: wash-icon 1s ease-in-out forwards;
-                            }
+                        //     &:hover::before {
+                        //         animation: wash-icon 1s ease-in-out forwards;
+                        //     }
 
-                            &:hover {
-                                color: $primary_color;
-                                @include box-shadow_buttons;
-                            }
-                        }
+                        //     &:hover {
+                        //         color: $primary_color;
+                        //         @include box-shadow_buttons;
+                        //     }
+                        // }
                     }
                 }
             }
@@ -107,42 +107,42 @@
                     display: flex;
                     align-items: center;
 
-                    & a {
-                        font-size: 1.2rem;
-                        position: relative;
-                        color: $primary_color;
-                        display: inline-block;
-                        overflow: hidden;
-                        background: $linear_gradient_text;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        padding: 2rem 0;
-                        width: 100%;
-                        display: flex;
+                //     & a {
+                //         font-size: 1.2rem;
+                //         position: relative;
+                //         color: $primary_color;
+                //         display: inline-block;
+                //         overflow: hidden;
+                //         background: $linear_gradient_text;
+                //         background-clip: text;
+                //         -webkit-background-clip: text;
+                //         padding: 2rem 0;
+                //         width: 100%;
+                //         display: flex;
 
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: -100%;
-                            width: 100%;
-                            height: 100%;
-                            background: $linear_gradient_text;
-                            z-index: 1;
-                            transition: none;
-                            pointer-events: none;
-                            mix-blend-mode: screen;
-                        }
+                //         &::before {
+                //             content: '';
+                //             position: absolute;
+                //             top: 0;
+                //             left: -100%;
+                //             width: 100%;
+                //             height: 100%;
+                //             background: $linear_gradient_text;
+                //             z-index: 1;
+                //             transition: none;
+                //             pointer-events: none;
+                //             mix-blend-mode: screen;
+                //         }
 
-                        &:hover::before {
-                            animation: wash-icon 1s ease-in-out forwards;
-                        }
+                //         &:hover::before {
+                //             animation: wash-icon 1s ease-in-out forwards;
+                //         }
 
-                        &:hover {
-                            color: $primary_color;
-                            @include box-shadow_buttons;
-                        }
-                    }
+                //         &:hover {
+                //             color: $primary_color;
+                //             @include box-shadow_buttons;
+                //         }
+                //     }
                 }
             }
         }
