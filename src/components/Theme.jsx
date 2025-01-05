@@ -7,6 +7,7 @@ export const themes = {
     text: "linear-gradient(120deg, #00aaff, #ffffff, #00aaff)",
     textButton: "black",
     bodyClass: 'dark-theme', 
+    icon : "#00aaff",
   },
   light: {
     background: "white", 
@@ -14,6 +15,7 @@ export const themes = {
     textButton: "black",
     backgroundButton: "white", 
     bodyClass: 'light-theme',
+    icon: "#000000",
   },
 };
 

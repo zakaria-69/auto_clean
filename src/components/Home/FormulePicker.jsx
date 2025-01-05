@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheck,
@@ -6,9 +6,13 @@ import {
   faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
 import CalendlyLink from "../calendlyLink";
+import { ThemeContext } from "../theme";
 
 const FormulePicker = () => {
+  // const [theme, setTheme] = useState(document.body.className);
+  const {theme} = useContext(ThemeContext);
   const fontCheckIconColor = "#00aaff";
+
   return (
     <section className="formules_picker_container" id="formule_picker">
       <h2>Nos formules</h2>
@@ -97,7 +101,7 @@ const FormulePicker = () => {
         <div className="formules_picker_container_informations_prestationTime">
           <FontAwesomeIcon
             icon={faTruck}
-            color={fontCheckIconColor}
+            color={theme.icon}
             className="fa-2x"
           />
           <div className="formules_picker_container_informations_prestationTime_titleAndText">
@@ -108,7 +112,7 @@ const FormulePicker = () => {
         <div className="formules_picker_container_informations_paiementMethods">
           <FontAwesomeIcon
             icon={faCreditCard}
-            color={fontCheckIconColor}
+            color={theme.icon}
             className="fa-2x"
           />
           <div className="formules_picker_container_informations_paiementMethods_titleAndText">

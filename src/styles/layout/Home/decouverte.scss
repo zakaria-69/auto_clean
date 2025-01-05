@@ -38,7 +38,7 @@
           &:hover {
             background: $reverse_linear_gradient_text;
             color: black;
-            // @include box-shadow_buttons;
+            @include box-shadow_buttons;
           }
 
           &:active {

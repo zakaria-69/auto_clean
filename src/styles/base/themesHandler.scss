@@ -151,7 +151,6 @@
 // decouverte
 
 .light-theme .decouverte_formule_container{
-
     & p{
         color: white;
     }
@@ -165,15 +164,15 @@
         cursor: pointer;
         z-index: 2;
         transition: background-color 1s ease;
-        color: $secondary_color;
+        // color: $secondary_color;
         background: white;
         color: black;
     }
     & a:hover{
-        // filter: drop-shadow(0 4px rgb(78, 206, 248));
+        filter: drop-shadow(4px 4px 4px white);
         background: black;
         color: white;
-        border: solid red 2px;
+        // box-shadow: 4px 4px 2px white;
     }
     &:active {
         // background: $linear_gradient_text;
@@ -181,3 +180,131 @@
         color: black;
       }
 }
+
+
+// description
+
+.light-theme .description_reviews_container {
+
+  // border: solid red 2px;
+  color: black;
+
+  &_subcontainer_description{
+    border-left: double black 4px;
+  }
+
+  &_subcontainer_reviews{
+    border-right: double black 4px;
+  }
+
+  & h2{
+    color: black;
+  }
+
+  & p{
+    color: black;
+  }
+
+  & a{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 1s ease;
+    color: $secondary_color;
+    background: black;
+    color: white;
+}
+& a:hover{
+    background: white;
+    color: black;
+    filter: drop-shadow(4px 4px 4px black);
+}
+&:active {
+    background-color: white;
+    color: black;
+  }
+}
+
+
+// formulePicker
+
+.light-theme .formules_picker_container{
+  // border: solid red 2px;
+  color: black;
+
+  & h2{
+    color: black;
+    text-decoration: underline black double 2px;
+  }
+
+  & h3{
+    color: white;
+  }
+
+  & p{
+    color: white;
+  }
+ 
+  &_cards_card_link {
+    margin: 0 auto 8rem auto !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 1s ease;
+    background: white;
+    color: black;
+    text-align: center;
+    width: 75%;
+    margin: 2rem auto 2rem auto;
+    z-index: 1;
+    color: black;
+
+    & a {
+      color: black;
+    }
+
+    &:hover {
+      background: black;
+      @include box-shadow_buttons;
+      filter: drop-shadow(4px 4px 4px white);
+
+      & a {
+        color: white; 
+      }
+    }
+
+    &:active {
+      background: white;
+      filter: drop-shadow(4px 4px 4px black);
+
+      & a{
+        color: black;
+      }
+    }
+  }
+
+
+  &_informations{
+    // border: solid red 2px;
+
+    & h3{
+        color: black;
+    }
+
+    & p{
+      color: black;
+    }
+  }
+}
+
+// prestation
+
+
