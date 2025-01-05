@@ -565,3 +565,49 @@
     @include box-shadow_buttons;
   }
 }
+
+//meeting page
+
+.light-theme .meetings_container{
+  &_subcontainer{
+    &_titleAndText{
+
+      & h1{
+        color: black;
+        text-decoration: underline double 3px black;
+      }
+  
+      & p{
+        color: black;
+      }
+  
+      & span{
+        color: black;
+      }
+     
+    }
+    &_card_container{
+      & h2, p {
+        color: white;
+      }
+    }
+    & a {
+      background: white;
+      color: black;
+  
+      &:hover {
+        background: black;
+        color: white;
+        filter: drop-shadow(4px 4px 4px white);
+      }
+  
+      &:active {
+        background: white;
+        color: black;
+        filter: drop-shadow(4px 4px 4px white);
+      }
+    }
+
+  }
+
+}
