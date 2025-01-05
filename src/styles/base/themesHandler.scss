@@ -664,3 +664,51 @@
       background-color: black;
     }
   }
+
+  // informations page
+
+  .light-theme .information_container{
+    // border: solid red 2px;
+    & p , a {
+      color: black;
+    }
+
+    &_subcontainer{
+      border: double black 4px ;
+      & h1{
+        color: black;
+        text-decoration: underline double 3px black;
+      }
+
+      &_infosContainer_schedule_day{
+        border-bottom: double black 4px ;
+        border-top:   double black 4px ;
+      }
+      
+    }
+    .information_appointment{
+      border-left: double black 4px ;
+        border-right:   double black 4px ;
+
+      & h2{
+        color: black;
+      }
+
+      & a {
+        background: black;
+        color: white;
+    
+        &:hover {
+          background: white;
+          color: black;
+          filter: drop-shadow(4px 4px 4px black);
+        }
+    
+        &:active {
+          background: black;
+          color: white;
+          filter: drop-shadow(4px 4px 4px black);
+        }
+      }
+    }
+  }
