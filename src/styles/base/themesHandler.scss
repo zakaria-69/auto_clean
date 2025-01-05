@@ -346,3 +346,39 @@
 }
 
 
+// services 
+
+.light-theme .service_container{
+
+  &_title_container{
+    & h2{
+      color: black;
+      text-decoration: underline double 3px black;
+    }
+
+    & p{
+      color: black !important;
+    }
+  }
+  & h3, p {
+    color : white;
+  }
+  & a{
+    background: white;
+    color: black;
+
+    &:hover{
+      background: black;
+    color: white;
+    filter: drop-shadow(4px 4px 4px white);
+    }
+    &:active{
+      background: white;
+      color: black;
+      filter: drop-shadow(4px 4px 4px white);
+    }
+  }
+
+ 
+}
+
