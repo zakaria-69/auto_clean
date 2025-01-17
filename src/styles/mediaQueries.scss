@@ -1,15 +1,14 @@
-@media screen and (max-width: 1118px){
-    .prestations_container_main_container_top_container a
+@media screen and (max-width: 1340px){
+
     .light-theme .prestations_container_main_container_top_container a, .dark-theme .prestations_container_main_container_top_container a{
         // border: solid red 2px;
-        width: 30%;
+        width: 300px;
     }
 
     .light-theme .formules_picker_container_cards_card_link, .dark-theme .formules_picker_container_cards_card_link{
         width: 90%;
     }
 }
-
 
 @media screen and (max-width: 1085px) {
     body{
@@ -92,6 +91,10 @@
         // border: solid blue 10px;
     }
 
+    p {
+        font-size: 1.2rem !important;
+    }
+// header
     .home_container_header_logo img{
         width: 8rem;
         margin: 0 auto;
@@ -105,13 +108,103 @@
     }
 
     .home_container_header_left_nav nav ul{
-        justify-content: center;
+        justify-content: space-between;
+
+        & li a{
+            // border: solid red 2px;
+            font-size: 1.4rem !important;
+        }
     }
 
     .home_container_header_social_medias{
         // border: solid red 2px;
-        justify-content: center;
+        justify-content: space-between;
         width: auto;
         margin: 0;
     }
+
+    .home_container_header_social_medias nav ul li {
+        margin: 1rem 2rem;
+
+        & a {
+            font-size: 1.8rem !important;
+            // border: solid red 2px;
+        }
+    }
+
+    //description 
+    .light-theme .description_reviews_container a,
+     .dark-theme .description_reviews_container_subcontainer_reviews_button,
+     .light-theme .formules_picker_container_cards_card_link, .dark-theme .formules_picker_container_cards_card_link
+     {
+        // border: solid orangered 3px;
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        // font-size: 1.3rem;
+    }
+    // formules
+    .formules_picker_container_cards_card_title, .prestations_container_main_container_bottom_container_subcontainer h3{
+        // border: solid red 2px;
+        font-size: 1.5rem;
+    }
+
+    .formules_picker_container_cards_card_title, .prestations_container_main_container_bottom_container_subcontainer p{
+        // border: solid red 2px;
+        font-size: 1.2rem;
+    }
+
+    .formules_picker_container_cards_card_price{
+        // border: solid blue 2px;
+        font-size: 1.4rem !important;
+    }
+    .formules_picker_container_cards_card ul li{
+        // border: solid blue 2px;
+        margin: 10px auto;
+    }
+    .formules_picker_container_cards_card ul p{
+        // border: solid green 2px;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .formules_picker_container_informations_prestationTime{
+        // border: solid red 2px;
+        // margin-right: 10px;
+    }
+
+    //contact
+
+    .contact_container_infos a{
+        // border: solid red 2px;
+        font-size: 1rem !important;
+    }
+
+    // infos
+    .light-theme .information_container_subcontainer_infosContainer_contact,
+     .dark-theme .information_container_subcontainer_infosContainer_contact,
+      .light-theme .information_container_subcontainer_infosContainer_schedule,
+       .dark-theme .information_container_subcontainer_infosContainer_schedule {
+        // border: solid red 2px;
+        & p{
+            // border: solid blue 2px;
+            font-size: 1.1rem !important;
+        }
+
+        & a{
+            // border: solid blue 2px;
+            font-size: 1.1rem !important;
+        }
+       
+    }
+  
 }
+
+ @media screen and (max-width: 1030px) {
+    .iconContainer{
+        // border: solid red 2px;
+        // display: flex;
+        // justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+ }

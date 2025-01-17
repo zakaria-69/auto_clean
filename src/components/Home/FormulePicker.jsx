@@ -10,7 +10,7 @@ import { ThemeContext } from "../theme";
 
 const FormulePicker = () => {
   // const [theme, setTheme] = useState(document.body.className);
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const fontCheckIconColor = "#00aaff";
 
   return (
@@ -25,18 +25,22 @@ const FormulePicker = () => {
             à partir de 120€
           </p>
           <ul>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Polissage</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Céramique</p>
-            </li>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Polissage</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Céramique</p>
+              </li>
+            </div>
           </ul>
           <div id="linkContainer">
-          <div className="formules_picker_container_cards_card_link">
-            <CalendlyLink />
+            <div className="formules_picker_container_cards_card_link">
+              <CalendlyLink />
             </div>
           </div>
         </div>
@@ -48,26 +52,50 @@ const FormulePicker = () => {
             à partir de 180€
           </p>
           <ul>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Polissage</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Céramique</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Rénovation phares</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Lavage éxterieur vapeur</p>
-            </li>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  color={fontCheckIconColor}
+                  className="icon"
+                />
+                <p>Polissage</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  color={fontCheckIconColor}
+                  className="icon"
+                />
+                <p>Céramique</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  color={fontCheckIconColor}
+                  className="icon"
+                />
+                <p>Rénovation phares</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  color={fontCheckIconColor}
+                  className="icon"
+                />
+                <p>Lavage éxterieur vapeur</p>
+              </li>
+            </div>
           </ul>
           <div id="linkContainer">
-          <div className="formules_picker_container_cards_card_link">
-            <CalendlyLink />
+            <div className="formules_picker_container_cards_card_link">
+              <CalendlyLink />
             </div>
           </div>
         </div>
@@ -79,26 +107,34 @@ const FormulePicker = () => {
             à partir de 240€
           </p>
           <ul>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Polissage</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Céramique</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Rénovation phares</p>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
-              <p>Lavage intérieur et éxterieur vapeur</p>
-            </li>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Polissage</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Céramique</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Rénovation phares</p>
+              </li>
+            </div>
+            <div className="iconContainer">
+              <li>
+                <FontAwesomeIcon icon={faCheck} color={fontCheckIconColor} />
+                <p>Lavage intérieur et éxterieur vapeur</p>
+              </li>
+            </div>
           </ul>
           <div id="linkContainer">
-          <div className="formules_picker_container_cards_card_link">
-            <CalendlyLink />
+            <div className="formules_picker_container_cards_card_link">
+              <CalendlyLink />
             </div>
           </div>
         </div>
