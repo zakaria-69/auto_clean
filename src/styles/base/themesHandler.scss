@@ -18,7 +18,7 @@
   color: transparent;
 
   &:hover {
-    background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
+    // background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -148,7 +148,6 @@
   &:hover::before {
     animation: wash-icon 1s ease-in-out forwards;
   }
-
 }
 
 // decouverte
@@ -184,14 +183,12 @@
       filter: drop-shadow(4px 4px 4px white);
     }
   }
-
 }
 
 
 // description
 
 .light-theme .description_reviews_container {
-
   // border: solid red 2px;
   color: black;
 
@@ -259,7 +256,7 @@
   }
 
   &_cards_card_link {
-    margin: 0 auto 8rem auto !important;
+    // margin: 0 auto 8rem auto !important;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -272,7 +269,7 @@
     color: black;
     text-align: center;
     width: 75%;
-    margin: 2rem auto 2rem auto;
+    // margin: 2rem auto 2rem auto;
     z-index: 1;
     color: black;
 
@@ -415,6 +412,7 @@
 
 // }
 
+// Footer
 
 .light-theme .footer_container_contact_list ul li a {
   color: black;
@@ -711,4 +709,11 @@
         }
       }
     }
+  }
+
+  #linkContainer{
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+    margin: 4rem auto 10px auto;
   }

@@ -34,8 +34,10 @@ const FormulePicker = () => {
               <p>Céramique</p>
             </li>
           </ul>
+          <div id="linkContainer">
           <div className="formules_picker_container_cards_card_link">
             <CalendlyLink />
+            </div>
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_two">
@@ -63,8 +65,10 @@ const FormulePicker = () => {
               <p>Lavage éxterieur vapeur</p>
             </li>
           </ul>
+          <div id="linkContainer">
           <div className="formules_picker_container_cards_card_link">
-          <CalendlyLink />
+            <CalendlyLink />
+            </div>
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_three">
@@ -92,8 +96,10 @@ const FormulePicker = () => {
               <p>Lavage intérieur et éxterieur vapeur</p>
             </li>
           </ul>
+          <div id="linkContainer">
           <div className="formules_picker_container_cards_card_link">
-          <CalendlyLink />
+            <CalendlyLink />
+            </div>
           </div>
         </div>
       </div>

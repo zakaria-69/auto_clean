@@ -40,7 +40,8 @@
     color: black;
     text-align: center;
     width: 75%;
-    margin: 2rem auto 2rem auto;
+    // margin: 2rem auto 2rem auto;
+    margin: 0 auto;
 }
 
 
@@ -119,7 +120,7 @@
 
 @mixin box_shadow_buttons {
     // box-shadow: 0 3px white ; // not decided if will use or not
-    filter: drop-shadow(0 2px white);
+    filter: drop-shadow(4px 4px 4px white);
 }
 
 @mixin overlayImgBackround {

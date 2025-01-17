@@ -11,7 +11,7 @@ const Decouverte = () => {
       <div className="decouverte_formule_container_card">
         <img src={car_washed} />
         <div className="decouverte_formule_container_card_textAndLink">
-          <p className="decouverte_formule_container_card_textAndLink_text"  style={{ color: theme.textImage }}>
+          <p className="decouverte_formule_container_card_textAndLink_text" style={{ color: theme.textImage }}>
             Auto Clean
           </p>
           <a

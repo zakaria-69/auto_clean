@@ -17,8 +17,8 @@
 
       &_card {
         width: 32%;
-        position: relative;
-        border-radius: 15px;
+        // position: relative;
+        // border-radius: 15px;
 
         &_title {
           @include subSections_title;
@@ -36,10 +36,11 @@
         }
 
         &_link {
-          margin: 0 auto 8rem auto !important;
+          // margin: 0 auto 8rem auto !important;
           @include linkMedium;
           z-index: 1;
           color: black;
+          // border: solid red 2px;
 
           & a {
             color: black;
@@ -56,9 +57,9 @@
         }
 
         & ul {
-          margin: 2rem auto 0 auto;
+          margin: 2rem auto 6rem auto;
           z-index: 10;
-          min-height: 45%;
+          // min-height: 45%;
 
           & li {
             z-index: 10;
