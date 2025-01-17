@@ -11,9 +11,9 @@ const Decouverte = () => {
       <div className="decouverte_formule_container_card">
         <img src={car_washed} />
         <div className="decouverte_formule_container_card_textAndLink">
-          <p className="decouverte_formule_container_card_textAndLink_text" style={{ color: theme.textImage }}>
+          <h2 className="decouverte_formule_container_card_textAndLink_text" style={{ color: theme.textImage }}>
             Auto Clean
-          </p>
+          </h2>
           <a
             href="#formule_picker"
             className="decouverte_formule_container_card_textAndLink_link"

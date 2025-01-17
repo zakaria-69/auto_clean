@@ -18,7 +18,7 @@
       &_card {
         width: 32%;
         // position: relative;
-        // border-radius: 15px;
+        border-radius: 15px;
 
         &_title {
           @include subSections_title;

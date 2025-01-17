@@ -50,6 +50,7 @@
       &_button {
         padding-bottom: 2rem;
         @include linkMedium;
+        margin-top: 2rem;
 
         &:hover {
           @include linkHover;

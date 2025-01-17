@@ -33,7 +33,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="navLink header_city">
+                <a href="#" className="navLink header_mail">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
