@@ -84,3 +84,34 @@
     }
     
 }
+
+// 966 Px
+
+@media screen and (max-width: 961px) {
+    body{
+        // border: solid blue 10px;
+    }
+
+    .home_container_header_logo img{
+        width: 8rem;
+        margin: 0 auto;
+
+    }
+
+    .home_container_header{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .home_container_header_left_nav nav ul{
+        justify-content: center;
+    }
+
+    .home_container_header_social_medias{
+        // border: solid red 2px;
+        justify-content: center;
+        width: auto;
+        margin: 0;
+    }
+}
