@@ -84,15 +84,15 @@
         // font-size: 50px;
     }
 
-    .light-theme .decouverte_formule_container_card_textAndLink_text, .dark-theme .decouverte_formule_container_card_textAndLink_text{
-        // border: solid red 2px;
-        font-size: 4rem;
-    }
+    // .light-theme .decouverte_formule_container_card_textAndLink_text, .dark-theme .decouverte_formule_container_card_textAndLink_text{
+    //     // border: solid red 2px;
+    //     font-size: 4rem;
+    // }
 
-    .light-theme .decouverte_formule_container a, .dark-theme .decouverte_formule_container_card_textAndLink_link{
-        // border: solid blue 2px;
-        font-size: 1.1rem;
-    }
+    // .light-theme .decouverte_formule_container a, .dark-theme .decouverte_formule_container_card_textAndLink_link{
+    //     // border: solid blue 2px;
+    //     font-size: 1.1rem;
+    // }
     .light-theme .description_reviews_container a, .dark-theme .description_reviews_container_subcontainer_reviews_button{
         // border: solid orangered 3px;
         margin-top: 2rem;
@@ -267,8 +267,177 @@
 // mobile
 @media screen and (max-width: 769px) {
     body{
-        border: solid red 2px;
+        border: solid purple 2px;
     }
+.home_container_header_left_nav {
+    width: 98%;
 }
+    //decouverte
+
+    .light-theme .decouverte_formule_container, .dark-theme .decouverte_formule_container{
+        width: 98%;
+    }
+
+// description
+.light-theme .description_reviews_container, .dark-theme .description_reviews_container{
+    // border: solid red 2px;
+    width: 98%;
+    flex-direction: column;
+}
+
+
+.dark-theme .description_reviews_container_subcontainer_description {
+    width: 100%;
+    // border-top: double rgb(78, 206, 248) 4px;
+    // border-bottom: double rgb(78, 206, 248) 4px;
+    margin-bottom: 3rem;
+    border-left: none;
+}
+
+.light-theme .description_reviews_container_subcontainer_description{
+    width: 100%;
+    // border-top: double black 4px;
+    // border-bottom: double black 4px;
+    margin-bottom: 3rem;
+    border-left: none;
+}
+
+.dark-theme .description_reviews_container_subcontainer_reviews {
+    // border: solid blue 2px;
+    width: 100%;
+    border-bottom: double rgb(78, 206, 248) 4px;
+    border-top: double rgb(78, 206, 248) 4px;
+    border-right: none;
+}
+
+.light-theme .description_reviews_container_subcontainer_reviews{
+     // border: solid blue 2px;
+     width: 100%;
+     border-bottom: double black 4px;
+     border-top: double black 4px;
+
+     border-right: none;
+}
+
+.light-theme .description_reviews_container_subcontainer_reviews_button,.dark-theme .description_reviews_container_subcontainer_reviews_button{
+    width: 30%;
+}
+
+//formules
+.light-theme .formules_picker_container, .dark-theme .formules_picker_container{
+    width: 98%;
+}
+
+.light-theme  .formules_picker_container_cards, .dark-theme  .formules_picker_container_cards{
+// border: solid red 2px;
+flex-direction: column;
+
+}
+
+.formule_card_one,.formule_card_two, .formule_card_three{
+// border: solid blue 2px;
+width: 100%;
+margin-bottom: 2rem;
+}
+
+.light-theme  .formules_picker_container_cards_card_link, .dark-theme  .formules_picker_container_cards_card_link{
+    // border: solid red 2px;
+    width: 30%;
+    }
+
+// .formule_card_two{
+//     border: solid blue 2px;
+// }
+
+// .formule_card_three{
+//     border: solid blue 2px;
+// }
+
+//presations 
+
+.prestations_container{
+    // border: solid red 2px;
+    width: 98%;
+}
+
+.prestations_container_main_container_bottom_container{
+    // border: solid white 2px;
+    flex-direction: column;
+}
+
+.prestations_container_main_container_bottom_container_subcontainer{
+    // border: solid blue 2px;
+    width: 100%;
+}
+
+.service_container{
+    // border: solid red 2px;
+    width: 98%;
+}
+
+
+.service_container_subcontainer_middle_container{
+    // border: solid blue 2px;
+    flex-direction: column;
+}
+
+.service_card_two{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.service_card_three{
+    width: 100%;
+}
+
+.service_card_four{
+    width: 100%;
+}
+
+// footer
+
+.light-theme .footer_container, .dark-theme .footer_container{
+    // border: solid red 2px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.light-theme .footer_container_logoAndSocials, .dark-theme .footer_container_logoAndSocials{
+    // border: solid blue 2px;
+    width: 100%;
+}
+
+.footer_container_logoAndSocials_medias nav ul {
+    // border: solid red 2px;
+    display: flex;
+    margin-bottom: 3rem;
+ 
+}
+.light-theme .footer_container_about, .dark-theme .footer_container_about{
+    // border: solid blue 2px;
+    width: 100%;
+}
+
+.light-theme .footer_container_contact, .dark-theme .footer_container_contact{
+    // border: solid blue 2px;
+    width: 100%;
+}
+.light-theme .footer_container_schedules, .dark-theme .footer_container_schedules{
+    // border: solid blue 2px;
+    width: 100%;
+}
+
+.light-theme .footer_container_schedules ol, .dark-theme .footer_container_schedules ol{
+    margin-bottom: 2rem;
+    // border: solid red 2px;
+}
+
+.light-theme .footer_container_map, .dark-theme .footer_container_map{
+    // margin-bottom: 2rem;
+    border: none;
+    
+}
+}
+
 
 
