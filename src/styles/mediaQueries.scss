@@ -1,5 +1,10 @@
+//DESKTOP
+
 @media screen and (max-width: 1340px){
 
+    body{
+        // border: solid blue 2px;
+    }
     .light-theme .prestations_container_main_container_top_container a, .dark-theme .prestations_container_main_container_top_container a{
         // border: solid red 2px;
         width: 300px;
@@ -8,8 +13,54 @@
     .light-theme .formules_picker_container_cards_card_link, .dark-theme .formules_picker_container_cards_card_link{
         width: 90%;
     }
+
+    // footer map
+.light-theme .footer_container, .dark-theme .footer_container{
+    // border: solid red 2px;
+    flex-wrap: wrap;
+
 }
 
+.light-theme .footer_containerlogoAndSocials, .dark-theme .footer_containerlogoAndSocials{
+ width: 25%;
+}
+
+.light-theme .footer_container_about, .dark-theme .footer_container_about{
+ width: 25%;
+}
+
+.light-theme .footer_container_contact, .dark-theme .footer_container_contact{
+ width: 25%;
+}
+
+.light-theme .footer_container_schedule, .dark-theme .footer_container_schedule{
+ width: 25%;
+}
+
+.dark-theme .footer_container_map{
+    width: 100%;
+    padding: 2rem;
+    border-top: double 4px #00aaff;
+}
+
+.light-theme .footer_container_map{
+    width: 100%;
+    padding: 2rem;
+    border-top: double 4px black;
+}
+
+
+.light-theme #footer_map, .dark-theme #footer_map{
+    // border: solid red 2px;
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+// LAPTOP and tablettes
 @media screen and (max-width: 1085px) {
     body{
         // border: solid red 10px;
@@ -62,7 +113,7 @@
             // border: solid blue 2px;
             font-size: 1.3rem !important;
         }
-       
+        
     }
 
     //footer
@@ -81,10 +132,24 @@
         // border: solid blue 2px;
         font-size: 1.6rem !important;
     }
+
+    .light-theme .footer_container_contact span, .dark-theme .footer_container_contact span{
+        // border: solid red 2px;
+        font-size: 1.1rem;
+    }
     
 }
 
-// 966 Px
+@media screen and (max-width: 1030px) {
+    .iconContainer{
+        // border: solid red 2px;
+        // display: flex;
+        // justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+ }
+
 
 @media screen and (max-width: 961px) {
     body{
@@ -199,12 +264,11 @@
   
 }
 
- @media screen and (max-width: 1030px) {
-    .iconContainer{
-        // border: solid red 2px;
-        // display: flex;
-        // justify-content: center;
-        width: 70%;
-        margin: 0 auto;
+// mobile
+@media screen and (max-width: 769px) {
+    body{
+        border: solid red 2px;
     }
- }
+}
+
+
