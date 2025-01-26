@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
-import { ThemeContext } from "../components/theme";
+import { ThemeContext } from "../components/Theme";
 
 // import dotenv from 'dotenv';
 
