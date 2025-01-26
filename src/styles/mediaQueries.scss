@@ -140,6 +140,11 @@
         // border: solid red 2px;
         font-size: 1.1rem;
     }
+
+    .light-theme .footer_container_schedules ol li, .dark-theme .footer_container_schedules ol li{
+        font-size: 1rem  !important;
+        // border: solid red 2px;
+      }
     
 }
 
@@ -296,6 +301,7 @@
     // border: solid red 2px;
     width: 98%;
     flex-direction: column;
+    margin: 3rem auto;
 }
 
 
@@ -339,6 +345,7 @@
 //formules
 .light-theme .formules_picker_container, .dark-theme .formules_picker_container{
     width: 98%;
+    margin: 3rem auto;
 }
 
 .light-theme  .formules_picker_container_cards, .dark-theme  .formules_picker_container_cards{
@@ -368,30 +375,42 @@ margin-bottom: 2rem;
 
 //presations 
 
-.prestations_container{
+.light-theme .prestations_container, .dark-theme .prestations_container{
     // border: solid red 2px;
     width: 98%;
+    margin: 3rem auto;
 }
 
-.prestations_container_main_container_bottom_container{
+.light-theme .prestations_container_main_container_bottom_container,
+.dark-theme .prestations_container_main_container_bottom_container
+{
     // border: solid white 2px;
     flex-direction: column;
 }
 
-.prestations_container_main_container_bottom_container_subcontainer{
+.light-theme .prestations_container_main_container_bottom_container_subcontainer,
+.dark-theme .light-theme .prestations_container_main_container_bottom_container_subcontainer
+{
     // border: solid blue 2px;
     width: 100%;
 }
 
-.service_container{
+.light-theme .service_container, 
+.dark-theme .service_container
+{
     // border: solid red 2px;
     width: 98%;
+    margin: 3rem auto;
 }
 
 
 .service_container_subcontainer_middle_container{
     // border: solid blue 2px;
     flex-direction: column;
+}
+
+.service_card_one{
+    width: 100%;
 }
 
 .service_card_two{
@@ -493,12 +512,12 @@ margin-bottom: 2rem;
     .light-theme .home_container_header_left_nav nav ul li a, .dark-theme .home_container_header_left_nav nav ul li a{
         // border: solid yellow 2px;
         // font-size: 3.5vw;
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
 
     .light-theme .home_container_header_social_medias a, .dark-theme .home_container_header_social_medias a{
         // border: solid blue 2px;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .light-theme .home_container_header_left_nav nav ul li a, .dark-theme .home_container_header_left_nav nav ul li a{
@@ -508,7 +527,7 @@ margin-bottom: 2rem;
 
     .light-theme .footer_container_logoAndSocials_medias nav ul li a, .dark-theme .footer_container_logoAndSocials_medias a{
         // border: solid blue 2px;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .light-theme .footer_container_logoAndSocials_medias, .dark-theme .footer_container_logoAndSocials_medias {
@@ -517,7 +536,7 @@ margin-bottom: 2rem;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 619px) {
     .formules_picker_container_informations{
         // border: solid red 2px;
         display: flex;
@@ -533,6 +552,25 @@ margin-bottom: 2rem;
             width: 100%;
         }
     }
+
+    // buttons size
+.light-theme .description_reviews_container a,
+ .dark-theme .description_reviews_container_subcontainer_reviews_button,
+ .light-theme .formules_picker_container_cards_card_link,
+ .dark-theme .formules_picker_container_cards_card_link
+ {
+    // border: solid red 2px;
+    width: 12rem;
+    // width: 90%;
+    max-width: 96%;
+}
+.light-theme .prestations_container_main_container_top_container a,
+ .dark-theme .prestations_container_main_container_top_container a{
+// width: 90%;
+// max-width: 96%;
+    font-size: 0.8rem;
+    // width: auto;
+}
 }
 
 
@@ -544,6 +582,104 @@ margin-bottom: 2rem;
         word-wrap: break-word;
         // border: solid red 4px;
     }
+    
 }
 
+@media screen and (max-width: 330px) {
+     // buttons size
+.light-theme .description_reviews_container a,
+.dark-theme .description_reviews_container_subcontainer_reviews_button,
+.light-theme .formules_picker_container_cards_card_link,
+.dark-theme .formules_picker_container_cards_card_link
+{
+//    border: solid red 2px;
+//    width: 12rem;
+   width: 90%;
+   max-width: 96%;
+}
+.light-theme .prestations_container_main_container_top_container a,
+.dark-theme .prestations_container_main_container_top_container a{
+width: 90%;
+max-width: 96%;
+   font-size: 0.8rem;
+}
+}
 
+@media screen and (max-width: 316px) {
+    .home_container_header_left_nav nav ul{
+        // border: solid red 2px;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .light-theme .home_container_header_left_nav nav ul li a, .dark-theme .home_container_header_left_nav nav ul li a {
+        font-size: 1.1rem;
+    }    
+    .light-theme .home_container_header_social_medias a, .dark-theme .home_container_header_social_medias a{
+        font-size: 1.5rem;
+    } 
+}
+
+@media screen and (max-width: 269px) {
+    // .light-theme .service_container_subcontainer a,
+    // .dark-theme .service_container_subcontainer a,
+    .light-theme .service_card_one a,
+    .light-theme .service_card_two a,
+    .light-theme .service_card_three a,
+    .light-theme .service_card_four a,
+    .dark-theme .service_card_one a,
+    .dark-theme  .service_card_two a,
+    .dark-theme  .service_card_three a,
+    .dark-theme  .service_card_four a
+    // .light-theme .service_container a,
+    // .dark-theme .service_container a
+    {
+        // border: solid red 2px;
+        width: 80%;
+        font-size: 0.8rem;
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .formules_picker_container_cards_card_price{
+        font-size: 1rem !important;
+    }
+
+    p{
+        // border: solid blue 2px;
+        font-size: 1rem !important;
+    }
+
+    h3{
+        // border: solid green 2px;
+        font-size: 1.1rem !important;
+    }
+
+    .service_card_one #linkContainer {
+        // border: solid red 2px;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .service_card_one #linkContainer a {
+        // border: solid blue 2px;
+        margin: 0 auto;
+        // position: static;
+    }
+
+
+    #linkContainer{
+        // border: solid red 3px;
+        position: absolute;
+        bottom: 4px;
+      }
+
+      .service_container_subcontainer_top_container, .service_container_subcontainer_bottom_container{
+        padding: 2rem 0;
+      }
+      
+      .light-theme .footer_container_schedules ol li, .dark-theme .footer_container_schedules ol li{
+        font-size: 1rem  !important;
+        border: solid red 2px;
+      }
+}
