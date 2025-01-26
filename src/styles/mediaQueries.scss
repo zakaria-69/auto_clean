@@ -1,10 +1,7 @@
 //DESKTOP
 
 @media screen and (max-width: 1340px){
-
-    body{
-        // border: solid blue 2px;
-    }
+  /////////////////// home Päge //////////////////////
     .light-theme .prestations_container_main_container_top_container a, .dark-theme .prestations_container_main_container_top_container a{
         // border: solid red 2px;
         width: 300px;
@@ -52,7 +49,7 @@
 
 .light-theme #footer_map, .dark-theme #footer_map{
     // border: solid red 2px;
-    width: 50%;
+    width: 100%;
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -151,7 +148,15 @@
         font-size: 1rem  !important;
         // border: solid red 2px;
       }
-    
+     /////////////////// meetin page //////////////////////
+    .meetings_container_subcontainer{
+        // border: solid red 2px;
+        width: 98%;
+
+    }
+    .meetings_card_one{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1030px) {
@@ -279,6 +284,19 @@
             font-size: 1.1rem !important;
         }
        
+    }
+
+     /////////////////// meetin page //////////////////////
+  
+    .meetings_card_one{
+        width: 90%;
+    }
+
+    ///////////////////// informations page ///////////////
+    
+    .light-theme .information_container_subcontainer, .dark-theme .information_container_subcontainer{
+        // border: solid red 2px;
+        width: 98%;
     }
   
 }
@@ -509,7 +527,52 @@ margin-bottom: 2rem;
     // border: solid grey 2px;
 }
 
+ /////////////////// meetin page //////////////////////
+  
+ .meetings_card_one{
+    width: 98%;
+}
 
+ /////////////////// Contact page //////////////////////
+ .contact_container_subcontainer{
+    width: 98%;
+ }
+ .contact_container_subcontainer_form_container{
+    // border: solid blue 2px;
+    flex-direction: column;
+ }
+  .contact_container_subcontainer_form_container input, .contact_container_subcontainer_form_container textarea{
+    width: 100%;
+    // border: solid red 2px;
+  }
+ 
+  .light-theme .contact_container p, .light-theme .contact_container span{
+    // border: solid red 2px;
+    font-size: 0.9rem !important;
+  }
+
+  .contact_container_infos{
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contact_container_infos_email, .contact_container_infos_phone, .contact_container_infos_adress{
+    // border: solid red 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+///////////////////// informations page ///////////////
+    
+.light-theme .information_container_subcontainer, .dark-theme .information_container_subcontainer{
+    // border: solid red 2px;
+    width: 98%;
+    border: none;
+}
 }
 
 
@@ -545,6 +608,30 @@ margin-bottom: 2rem;
         // border: solid red 2px;
         width: 100%;
     }
+
+    // .dark-theme .footer_container_map{
+    //     width: 100%;
+    //     padding: 2rem;
+    //     // border-top: double 4px #00aaff;
+    //     border: solid red 2px;
+    // }
+    
+    // .light-theme .footer_container_map{
+    //     width: 100%;
+    //     padding: 2rem;
+    //     border-top: double 4px black;
+    // }
+
+    // .light-theme .footer_container_map,
+    //  .dark-theme .footer_container_map{
+    //     // border: solid red 2px !important;
+    //  }
+
+    //  .light-theme .footer_container_map iframe,
+    //  .dark-theme .footer_container_map iframe{
+    //     border: solid red 2px !important;
+    //     width: 100px;
+    //  }
 }
 
 @media screen and (max-width: 619px) {
@@ -582,6 +669,50 @@ margin-bottom: 2rem;
     font-size: 0.8rem;
     // width: auto;
 }
+
+///////////////////// informations page ///////////////
+    
+.information_container_subcontainer_infosContainer{
+    // border: solid blue 2px;
+    flex-direction: column;
+    // font-size: 12vw;
+
+    &_contact{
+    // border: solid green 4px;
+    width: 100%;
+
+    &_adress{
+    // border: solid purple 2px;
+    width: 100%;
+    justify-content: center;
+    }
+
+    &_phone{
+        // border: solid purple 2px;
+        justify-content: center;
+    }
+
+    &_email{
+        // border: solid purple 2px;
+        justify-content: center;
+    }
+
+    }
+    &_schedule{
+        // border: solid green 4px;
+        width: 100%;
+
+    }
+}
+
+.light-theme .information_appointment, .dark-theme .information_appointment{
+    border: none;
+    width: 98%;
+}
+
+.about_me p{
+    font-size: 0.8rem !important;
+}
 }
 
 
@@ -614,6 +745,12 @@ width: 90%;
 max-width: 96%;
    font-size: 0.8rem;
 }
+
+.light-theme .information_appointment, .dark-theme .information_appointment{
+    margin-bottom: 2rem;
+    padding-top: 2.5rem;
+    
+}
 }
 
 @media screen and (max-width: 316px) {
@@ -635,6 +772,26 @@ max-width: 96%;
         font-size: 1.5rem;
         padding: 0;
     }
+
+    //////////// Contact Page /////////////////
+    .contact_container h1{
+// border: solid red 2px;
+    font-size: 12vw;
+    }
+
+    ////////////// meeting page //////////////
+    
+.meetings_container_subcontainer_titleAndText h1{
+    font-size: 12vw;
+}
+
+
+    ///////////////////// informations page ///////////////
+    
+.light-theme .information_container_subcontainer h1, .dark-theme .information_container_subcontainer h1{
+    // border: solid red 2px;
+    font-size: 12vw;
+}
 }
 
 @media screen and (max-width: 269px) {
@@ -698,4 +855,5 @@ max-width: 96%;
         font-size: 1rem  !important;
         // border: solid red 2px;
       }
+     
 }
