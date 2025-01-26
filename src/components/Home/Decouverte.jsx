@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 import car_washed from "../../assets/img/clean_white_car2.jpeg";
-import { ThemeContext } from "../theme";
+import { ThemeContext } from "../Theme";
 
 
 const Decouverte = () => {

@@ -6,7 +6,7 @@ import Description from "../components/Home/Description";
 import FormulePicker from "../components/Home/FormulePicker";
 import Prestation from "../components/Home/Prestation";
 import Services from "../components/Home/Services";
-import { ThemeContext } from "../components/theme";
+import { ThemeContext } from "../components/Theme";
 
 const Home = () => {
    const { theme, toggleTheme } = useContext(ThemeContext);

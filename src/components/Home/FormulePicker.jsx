@@ -6,7 +6,7 @@ import {
   faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
 import CalendlyLink from "../calendlyLink";
-import { ThemeContext } from "../theme";
+import { ThemeContext } from "../Theme";
 
 const FormulePicker = () => {
   // const [theme, setTheme] = useState(document.body.className);

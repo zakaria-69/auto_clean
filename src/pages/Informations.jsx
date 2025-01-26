@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
-import { ThemeContext } from "../components/theme";
+import { ThemeContext } from "../components/Theme";
 
 const Informations = () => {
   const {theme} = useContext(ThemeContext);
