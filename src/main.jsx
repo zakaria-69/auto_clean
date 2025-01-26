@@ -6,7 +6,7 @@ import Informations from './pages/Informations.jsx'
 import Contact from './pages/Contact.jsx'
 import Meetings from './pages/Meetings.jsx'
 import Home from './pages/Home.jsx'
-import { ThemeProvider } from './components/themes.jsx'
+import { ThemeProvider } from './components/Theme.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -7,7 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { themes, ThemeContext } from "./theme";
+import { themes, ThemeContext } from "./Theme";
 
 const Header = () => {
   const {theme, toggleTheme} = useContext(ThemeContext);
