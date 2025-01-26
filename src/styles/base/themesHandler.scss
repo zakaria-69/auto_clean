@@ -570,7 +570,7 @@
 }
 
   // services
-  .light-theme .service_card_two a, .light-theme .service_card_three a{
+  .light-theme .service_card_one, .light-theme .service_card_two a, .light-theme .service_card_three a, .light-theme{
     bottom: 20px;
   }
 
@@ -728,4 +728,13 @@
     bottom: 2px;
     margin: 4rem auto 10px auto;
   }
+
+  #linkContainer_top, #linkContainer_bottom{
+    // border: solid red 3px;
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+    // margin: 4rem auto 10px auto;
+  }
+
 
