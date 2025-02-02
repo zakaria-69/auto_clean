@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { ThemeContext } from "../components/Theme";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 const Informations = () => {
   const {theme} = useContext(ThemeContext);
   return (
     <section className="information_container">
       <Header />
+      <ThemeSwitch />
       <section className="information_container_subcontainer">
         <h1>
           Auto clean Lyon

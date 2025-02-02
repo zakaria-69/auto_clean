@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../components/Theme";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 // import dotenv from 'dotenv';
 
@@ -64,6 +65,7 @@ const Contact = () => {
   return (
     <section className="contact_container">
       <Header />
+      <ThemeSwitch />
       <div className="contact_container_subcontainer">
         <div className="contact_container_subcontainer_titleAndText">
           <h1>Contact</h1>

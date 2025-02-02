@@ -1,11 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ThemeSwitch from "../components/ThemeSwitch";
 import CalendlyLink from "../components/calendlyLink";
 
 const Meetings = () => {
   return (
     <section className="meetings_container">
       <Header />
+      <ThemeSwitch />
       <div className="meetings_container_subcontainer">
         <div className="meetings_container_subcontainer_titleAndText">
           <h1>Rendez-vous</h1>
