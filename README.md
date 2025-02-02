@@ -1,8 +1,5 @@
-# React + Vite
+# React + Vite Auto clean project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a personal project aimed at creating a showcase website for a vehicle cleaning company, with the ability to schedule appointments via Calendly and send emails to the manager for any inquiries. The project is built using ReactJS, SCSS, and the EmailJS library.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can find the hosted website here :  https://auto-clean-jrttfz0ug-zaks-projects-be257140.vercel.app/
