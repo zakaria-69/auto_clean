@@ -70,11 +70,6 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div>
-        <button onClick={toggleTheme}>
-          {theme === themes.dark ? "Passer au mode jour" : "Passer au mode nuit"}
-        </button>
-      </div>
     </header>
   );
 };
