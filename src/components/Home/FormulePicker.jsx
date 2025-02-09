@@ -7,6 +7,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import CalendlyLink from "../calendlyLink";
 import { ThemeContext } from "../Theme";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 
 const FormulePicker = () => {
   // const [theme, setTheme] = useState(document.body.className);
@@ -39,9 +41,11 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
+            <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
             <div className="formules_picker_container_cards_card_link">
               <CalendlyLink />
             </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_two">
@@ -94,9 +98,11 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
+          <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
             <div className="formules_picker_container_cards_card_link">
               <CalendlyLink />
             </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="formules_picker_container_cards_card formule_card_three">
@@ -133,9 +139,11 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
+          <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
             <div className="formules_picker_container_cards_card_link">
               <CalendlyLink />
             </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </div>

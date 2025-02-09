@@ -2,6 +2,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ThemeSwitch from "../components/ThemeSwitch";
 import CalendlyLink from "../components/calendlyLink";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const Meetings = () => {
   return (
@@ -22,7 +24,10 @@ const Meetings = () => {
             <h2>Lyon</h2>
             <p>Lyon 69000</p>
             <div  className="meetings_container_subcontainer_card_container_card_calendlyLink">
+            <AnimationOnScroll animateIn="animate__backInRight" offset={200} animateOnce="true" 
+            >
             <CalendlyLink />
+            </AnimationOnScroll>
             </div>
             
           </div>

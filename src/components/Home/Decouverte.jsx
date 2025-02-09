@@ -1,7 +1,10 @@
 
 import { useContext } from "react";
+// import {AnimationOnScroll } from 'react-animation-on-scroll';
+// import 'animate.css';
 import car_washed from "../../assets/img/clean_white_car2.jpeg";
 import { ThemeContext } from "../Theme";
+
 
 
 const Decouverte = () => {
@@ -14,16 +17,15 @@ const Decouverte = () => {
           <h2 className="decouverte_formule_container_card_textAndLink_text" style={{ color: theme.textImage }}>
             Auto Clean
           </h2>
+          {/* <AnimationOnScroll animateIn="animate__backInRight"> */}
           <a
             href="#formule_picker"
             className="decouverte_formule_container_card_textAndLink_link"
-            // style={{ 
-            //   color: theme.text, 
-            //   background: theme.backgroundButton 
-            // }}
           >
             Découvrir nos formules
           </a>
+          {/* </AnimationOnScroll> */}
+          
         </div>
       </div>
     </section>

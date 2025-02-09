@@ -1,4 +1,6 @@
 import CalendlyLink from "../calendlyLink";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css'
 
 const Services = () => {
   return (
@@ -19,7 +21,9 @@ const Services = () => {
             Repellat eius amet et?
           </p>
           <div id="linkContainer_one">
+          <AnimationOnScroll animateIn="animate__backInRight" offset={50} animateOnce="true">
             <CalendlyLink />
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="service_container_subcontainer_middle_container">
@@ -32,7 +36,9 @@ const Services = () => {
               Repellat eius amet et?
             </p>
             <div id="linkContainer">
+          <AnimationOnScroll animateIn="animate__backInRight" offset={50} animateOnce="true">
               <CalendlyLink />
+              </AnimationOnScroll>
             </div>
           </div>
           <div className="service_container_subcontainer_middle_container_right service_card_three">
@@ -44,7 +50,10 @@ const Services = () => {
               Repellat eius amet et?
             </p>
             <div id="linkContainer">
+
+          <AnimationOnScroll animateIn="animate__backInRight" offset={50} animateOnce="true">
               <CalendlyLink />
+              </AnimationOnScroll>
             </div>
           </div>
         </div>
@@ -57,7 +66,9 @@ const Services = () => {
             Repellat eius amet et?
           </p>
           <div id="#linkContainer_bottom">
+          <AnimationOnScroll animateIn="animate__backInRight" offset={50} animateOnce="true">
             <CalendlyLink />
+            </AnimationOnScroll>
           </div>
         </div>
       </div>

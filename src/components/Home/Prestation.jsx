@@ -1,4 +1,6 @@
 import CalendlyLink from "../calendlyLink";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 
 const Prestation = () => {
   return (
@@ -12,7 +14,10 @@ const Prestation = () => {
         <div className="prestations_container_main_container_top_container">
           <h3>Lavage intérieur vapeur</h3>
           <span>à partir de 100€</span>
+          <AnimationOnScroll animateIn="animate__backInRight" offset={50} animateOnce="true">
           <CalendlyLink />
+          </AnimationOnScroll>
+         
         </div>
         <div className="prestations_container_main_container_bottom_container">
           <div className="prestations_container_main_container_bottom_container_subcontainer formule_card_one">

@@ -6,7 +6,8 @@ import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { ThemeContext } from "../components/Theme";
 import ThemeSwitch from "../components/ThemeSwitch";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 const Informations = () => {
   const {theme} = useContext(ThemeContext);
   return (
@@ -17,7 +18,7 @@ const Informations = () => {
         <h1>
           Auto clean Lyon
         </h1>
-        <p className="information_container_subcontainer_whereAndWhen">Ou et quand ?</p>
+        <p className="information_container_subcontainer_whereAndWhen">Où et quand ?</p>
         <div className="information_container_subcontainer_infosContainer">
           <div className="information_container_subcontainer_infosContainer_contact">
             <ul>
@@ -97,7 +98,9 @@ const Informations = () => {
         <div className="information_appointment_subcontainer">
           <h2>Prendre rendez-vous</h2>
           <p>dans cet atelier</p>
+          <AnimationOnScroll className="form_validation_button" animateIn="animate__backInRight" offset={50} animateOnce="true">
             <CalendlyLink />
+            </AnimationOnScroll>
         </div>
       </section>
       <div className="about_me">

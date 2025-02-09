@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../components/Theme";
 import ThemeSwitch from "../components/ThemeSwitch";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 
 // import dotenv from 'dotenv';
 
@@ -134,7 +136,9 @@ const Contact = () => {
               obligatoires
             </span>
           </div>
+          <AnimationOnScroll className="form_validation_button" animateIn="animate__backInRight" offset={50} animateOnce="true">
           <button type="submit">Envoyer</button>
+          </AnimationOnScroll>
         </form>
       </div>
       <hr />

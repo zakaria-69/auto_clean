@@ -1,4 +1,6 @@
 import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 
 const Description = () => {
   return (
@@ -17,12 +19,15 @@ const Description = () => {
           &quot; Très satisfait du résultat j&apos;ai recuperer mon véhicule
           comme neuf !&quot;{" "}
         </p>
+        <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" style={{ display: 'flex' }} offset={0}>
         <a
           href="/"
           className="description_reviews_container_subcontainer_reviews_button"
         >
           Découvrir plus d&apos;avis
         </a>
+        </AnimationOnScroll>
+       
       </div>
     </section>
   );
