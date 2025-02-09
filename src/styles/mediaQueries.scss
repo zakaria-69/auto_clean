@@ -196,8 +196,12 @@
         height: auto;
     }
 
+    .home_container_header_left_nav{
+        width: 100%;
+    }
+
     .home_container_header_left_nav nav ul{
-        justify-content: space-between;
+        justify-content: space-around;
 
         & li a{
             // border: solid red 2px;
@@ -220,6 +224,20 @@
             // border: solid red 2px;
         }
     }
+
+    .light-theme .home_container_header_left_nav nav ul li ,
+    .dark-theme .home_container_header_left_nav nav ul li {
+        //  border: solid red 2px;
+         margin: 0;
+    
+     }
+
+
+     .light-theme .home_container_header_left_nav nav ul li a,
+     .dark-theme .home_container_header_left_nav nav ul li a{
+          // border: solid red 2px;
+          font-size: 3vw;
+      }
 
     //description 
     .light-theme .description_reviews_container a,
@@ -586,7 +604,7 @@ margin-bottom: 2rem;
     .light-theme .home_container_header_left_nav nav ul li a, .dark-theme .home_container_header_left_nav nav ul li a{
         // border: solid yellow 2px;
         // font-size: 3.5vw;
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .light-theme .home_container_header_social_medias a, .dark-theme .home_container_header_social_medias a{
@@ -598,6 +616,12 @@ margin-bottom: 2rem;
         // border: solid yellow 2px;
         // font-size: 3.5vw;
     }
+    .light-theme .home_container_header_left_nav nav ul li a,
+    .dark-theme .home_container_header_left_nav nav ul li a{
+         // border: solid red 2px;
+         font-size: 5vw;
+     }
+
 
     .light-theme .footer_container_logoAndSocials_medias nav ul li a, .dark-theme .footer_container_logoAndSocials_medias a{
         // border: solid blue 2px;
@@ -763,6 +787,13 @@ max-width: 96%;
     .light-theme .home_container_header_left_nav nav ul li a, .dark-theme .home_container_header_left_nav nav ul li a {
         font-size: 1.1rem;
     }    
+
+    // .light-theme .home_container_header_left_nav nav ul li a,
+    // .dark-theme .home_container_header_left_nav nav ul li a{
+    //      border: solid blue 2px;
+    //      font-size: 3vw;
+    //  }
+
     .light-theme .home_container_header_social_medias a, .dark-theme .home_container_header_social_medias a{
         font-size: 1.5rem;
         padding: 0;
