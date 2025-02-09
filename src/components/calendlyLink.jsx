@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const CalendlyLink = () => {
   const [calendlyLink, setCalendyLink] = useState("");
@@ -11,10 +13,11 @@ const CalendlyLink = () => {
   }, []);
 
   return (
-    <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
-      Prendre rendez-vous
-    </a>
+    <div>
+      <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
+        Prendre rendez-vous
+      </a>
+    </div>
   );
 };
-
 export default CalendlyLink;
