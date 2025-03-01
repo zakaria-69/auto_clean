@@ -32,7 +32,7 @@ const NavbarHome = () => {
            <li><a href="#description">Déscription</a></li>
            <li><a href="#formule_picker">Formules</a></li>
            <li><a href="#prestations">préstations</a></li>
-           <li><a href="#services">préstations</a></li>
+           <li><a href="#services">Services</a></li>
            <li><a href="#footer">bas de page</a></li>
        </ul>
      </nav>
