@@ -23,7 +23,7 @@ const NavbarHome = () => {
       {isOpen && (
        <nav className="home-nav-container" >
         <button className="close-modal-btn" onClick={() => closeModal()}>
-        <FontAwesomeIcon icon={faClose} className="close-modal-icon" size="xl"/>
+        <FontAwesomeIcon icon={faClose} className="close-modal-icon" />
         </button>
         <h3>Naviguer vers :</h3>
        <ul>

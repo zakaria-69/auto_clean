@@ -1,7 +1,9 @@
 .home-nav-wrapper{
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    // right: 0;
+    // bottom: 0;
+    right: -50px;
+    bottom: 0;
     z-index: 9999;
     padding: 15px;
     color: #00aaff;
@@ -15,7 +17,7 @@
     padding: 10px;
     border-radius: 10px;
     position: absolute;
-    right: 0px;
+    right: 70px;
    bottom: 45px;
    width: 12rem;   
 
@@ -38,6 +40,15 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+
+    box-shadow: 2px 2px 1px black;
   }
 
   .close-modal-icon{
