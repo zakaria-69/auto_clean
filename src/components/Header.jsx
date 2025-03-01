@@ -48,22 +48,22 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#" className="navLink header_accueil" >
+              <a href="https://www.instagram.com/__zak.l__/" target="_blank" className="navLink header_accueil" >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_meetings">
+              <a href="https://www.snapchat.com/fr-FR" target="_blank" className="navLink header_meetings">
                 <FontAwesomeIcon icon={faSnapchat} />
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_contact">
+              <a href="https://www.linkedin.com/in/zakaria-ladjrafi/" target="_blank" className="navLink header_contact">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li>
-              <a href="#" className="navLink header_city">
+              <a href="mailto:ladjrafi_zakaria@yahoo.com" target="_blank" className="navLink header_city">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </li>
