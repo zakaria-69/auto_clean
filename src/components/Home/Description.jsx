@@ -4,7 +4,7 @@ import 'animate.css';
 
 const Description = () => {
   return (
-    <section className="description_reviews_container">
+    <section className="description_reviews_container" id="description">
       <div className="description_reviews_container_subcontainer_description">
         <p className="description_reviews_container_subcontainer_description_sentence_hook">
           &quot; Nous Redonnons éclat et brillance à votre véhicule avec notre

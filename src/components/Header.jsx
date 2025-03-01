@@ -12,7 +12,7 @@ import { themes, ThemeContext } from "./Theme";
 const Header = () => {
   const {theme, toggleTheme} = useContext(ThemeContext);
   return (
-    <header className="home_container_header"> 
+    <header className="home_container_header" id="header"> 
       <div className="home_container_header_logo">
         <a href="/">
           <img src={logo} alt="logo de voiture qui brille" />

@@ -10,7 +10,7 @@ import { ThemeContext } from "../Theme";
 const Decouverte = () => {
   const {theme, toggleTheme} = useContext(ThemeContext)
   return (
-    <section className="decouverte_formule_container">
+    <section className="decouverte_formule_container" id="decouverte">
       <div className="decouverte_formule_container_card">
         <img src={car_washed} />
         <div className="decouverte_formule_container_card_textAndLink">

@@ -9,7 +9,7 @@ import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="footer_container">
+    <footer className="footer_container" id="footer">
       <div className="footer_container_logoAndSocials">
         <a href="/">
           <img src={logo} alt="logo de voiture qui brille" />

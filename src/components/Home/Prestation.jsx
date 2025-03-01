@@ -4,7 +4,7 @@ import 'animate.css';
 
 const Prestation = () => {
   return (
-    <section className="prestations_container">
+    <section className="prestations_container" id="prestations">
       <div className="prestations_container_title_container">
         <h2>Prestations</h2>
         <p>Découvrez également nos préstations sur mesure : </p>

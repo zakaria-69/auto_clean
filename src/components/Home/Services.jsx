@@ -4,7 +4,7 @@ import 'animate.css'
 
 const Services = () => {
   return (
-    <section className="service_container">
+    <section className="service_container" id="services">
       <div className="service_container_title_container">
         <h2>Services</h2>
         <p>
