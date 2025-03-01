@@ -63,7 +63,7 @@ function ThemeSwitch() {
         <FormControlLabel
       control={
         <MaterialUISwitch
-          checked={theme === themes.dark}
+          checked={theme.bodyClass === themes.dark.bodyClass}
           onChange={toggleTheme}
         />
       }

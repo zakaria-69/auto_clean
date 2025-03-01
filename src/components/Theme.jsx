@@ -25,11 +25,13 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("appTheme");
+    console.log("Theme récupéré depuis localStorage:", savedTheme);
     return savedTheme ? JSON.parse(savedTheme) : themes.light;
   }); // initial theme light
 
   // update bodys properties when changes theme
   useEffect(() => {
+    console.log("Mise à jour du localStorage avec:", theme);
     document.body.className = theme.bodyClass;
     document.body.style.backgroundColor = theme.background;
     document.body.style.color = theme.text;
