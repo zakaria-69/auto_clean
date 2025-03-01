@@ -8,11 +8,13 @@ import Prestation from "../components/Home/Prestation";
 import Services from "../components/Home/Services";
 import { ThemeContext } from "../components/Theme";
 import ThemeSwitch from "../components/ThemeSwitch";
+import NavbarHome from "../components/Home/NavbarHome";
 
 const Home = () => {
    const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <section style={{ backgroundColor: theme.background, color: theme.text }}>
+      <NavbarHome />
       <Header />
       <ThemeSwitch />
       <Decouverte />
