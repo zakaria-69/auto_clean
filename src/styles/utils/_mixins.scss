@@ -40,7 +40,6 @@
     color: black;
     text-align: center;
     width: 75%;
-    // margin: 2rem auto 2rem auto;
     margin: 0 auto;
 }
 
@@ -87,17 +86,13 @@
 }
 
 @mixin leftCadre {
-    // border-top: double rgb(78, 206, 248) 4px;
-    // border-bottom: double rgb(78, 206, 248) 4px;
-    border-left: double rgb(78, 206, 248) 4px; // not decided if will use or not
+    border-left: double rgb(78, 206, 248) 4px;
     border-radius: 25px;
     padding: 5px;
 }
 
 @mixin rightCadre {
-    // border-top: double rgb(78, 206, 248) 4px;
-    // border-bottom: double rgb(78, 206, 248) 4px;
-    border-right: double rgb(78, 206, 248) 4px; // not decided if will use or not
+    border-right: double rgb(78, 206, 248) 4px;
     border-radius: 25px;
     padding: 5px;
 }
@@ -105,7 +100,6 @@
 @mixin topCadre {
     border-top: double rgb(78, 206, 248) 4px;
     border-bottom: double rgb(78, 206, 248) 4px;
-    // border-left: double rgb(78, 206, 248) 4px; // not decided if will use or not
     border-radius: 25px;
     padding: 5px;
 }
@@ -113,13 +107,11 @@
 @mixin bottomCadre {
     border-top: double rgb(78, 206, 248) 4px;
     border-bottom: double rgb(78, 206, 248) 4px;
-    // border-right: double rgb(78, 206, 248) 4px; // not decided if will use or not
     border-radius: 25px;
     padding: 5px;
 }
 
 @mixin box_shadow_buttons {
-    // box-shadow: 0 3px white ; // not decided if will use or not
     filter: drop-shadow(4px 4px 4px white);
 }
 
@@ -147,68 +139,68 @@
     }
 }
 
-@mixin textUnderline{
+@mixin textUnderline {
     text-decoration: underline double 3px #00aaff;
-    }
+}
 
-    @mixin contactInfos{
-            width: 33%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            font-size: 1.1rem;
+@mixin contactInfos {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    @include linearGradientText;
+    font-style: italic;
+    font-weight: 600;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    & p {
+        padding-top: 15px;
+        word-wrap: break-word;
+        max-width: 100%;
+
+        & a {
             @include linearGradientText;
-            font-style: italic;
-            font-weight: 600;
-            word-wrap: break-word;
-             overflow-wrap: break-word;
+        }
+    }
+}
 
-             & p{
-                padding-top: 15px;
-                word-wrap: break-word;
-                max-width: 100%;
+@mixin clickableLink {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: $reverse_linear_gradient_text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
-                & a{
-                    @include linearGradientText;
-                }
-            }  
+    &:hover {
+        background: $linear_gradient_text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        @include box-shadow_buttons;
     }
 
-    @mixin clickableLink{
-            position: relative;
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            overflow: hidden;
-            font-size: 1.5rem;
-            font-weight: bold;
-            background: $reverse_linear_gradient_text;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-
-            &:hover {
-              background: $linear_gradient_text;
-              background-clip: text;
-              -webkit-background-clip: text;
-              color: transparent;
-              @include box-shadow_buttons;
-            }
-
-            &::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: -100%;
-              width: 100%;
-              height: 100%;
-              background: $linear_gradient_text;
-              z-index: 1;
-              pointer-events: none;
-              mix-blend-mode: lighten;
-            }
-
-            &:hover::before {
-              animation: wash-text 1.5s ease-in-out forwards;
-            }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $linear_gradient_text;
+        z-index: 1;
+        pointer-events: none;
+        mix-blend-mode: lighten;
     }
+
+    &:hover::before {
+        animation: wash-text 1.5s ease-in-out forwards;
+    }
+}

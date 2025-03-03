@@ -1,67 +1,65 @@
 .description_reviews_container {
-    margin: 10rem auto;
-    width: 80%;
+  margin: 10rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+
+  &_subcontainer_description {
+    width: 70%;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    @include leftCadre;
+    padding: 1rem 15px;
 
-    &_subcontainer_description {
-      width: 70%;
-      padding: 2rem;
-      display: flex;
-      align-items: center;
-      @include leftCadre;
-      padding: 1rem 15px;
-
-      &_sentence_hook {
-        background: $reverse_linear_gradient_text;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        ;
-        font-size: 2.5rem;
-        text-align: center;
-      }
-    }
-
-    &_subcontainer_reviews {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      @include rightCadre;
-      padding: 1rem 15px;
-
-      &_title {
-        color: $secondary_color;
-        font-size: 2rem;
-        text-align: center;
-        @include linearGradientText;
-        margin-top: 2rem;
-      }
-
-      &_review {
-        color: $secondary_color;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 2rem;
-        @include reverseLinearGradientText;
-      }
-
-      &_button {
-        padding-bottom: 2rem;
-        @include linkMedium;
-        margin-top: 2rem;
-
-        &:hover {
-          @include linkHover;
-          @include box-shadow_buttons;
-        }
-
-        &:active {
-          @include linkActive;
-        }
-      }
+    &_sentence_hook {
+      background: $reverse_linear_gradient_text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      ;
+      font-size: 2.5rem;
+      text-align: center;
     }
   }
 
-  // end description review container
+  &_subcontainer_reviews {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include rightCadre;
+    padding: 1rem 15px;
+
+    &_title {
+      color: $secondary_color;
+      font-size: 2rem;
+      text-align: center;
+      @include linearGradientText;
+      margin-top: 2rem;
+    }
+
+    &_review {
+      color: $secondary_color;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      @include reverseLinearGradientText;
+    }
+
+    &_button {
+      padding-bottom: 2rem;
+      @include linkMedium;
+      margin-top: 2rem;
+
+      &:hover {
+        @include linkHover;
+        @include box-shadow_buttons;
+      }
+
+      &:active {
+        @include linkActive;
+      }
+    }
+  }
+}

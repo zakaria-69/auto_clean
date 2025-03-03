@@ -1,67 +1,65 @@
 .decouverte_formule_container {
-    width: 80%;
-    margin: 2rem auto 0 auto;
+  width: 80%;
+  margin: 2rem auto 0 auto;
 
-    &_card {
-      position: relative;
-      justify-content: center;
-      align-self: center;
-      border-radius: 15px;
+  &_card {
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    border-radius: 15px;
 
-      img {
-        height: 100%;
-        width: 100%;
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        border-radius: 5%;
+    img {
+      height: 100%;
+      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      border-radius: 5%;
+    }
+
+    &_textAndLink {
+      position: absolute;
+      top: 2%;
+      padding: 0 1.5rem;
+
+      &_link {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 2vw;
+        font-weight: 600;
+        cursor: pointer;
+        z-index: 2;
+        transition: background-color 1s ease;
+        color: $secondary_color;
+        background: $linear_gradient_text;
+        color: black;
+
+        &:hover {
+          background: $reverse_linear_gradient_text;
+          color: black;
+          @include box-shadow_buttons;
+        }
+
+        &:active {
+          background: $linear_gradient_text;
+          color: white;
+        }
       }
 
-      &_textAndLink {
-        position: absolute;
-        top: 2%;
-        padding: 0 1.5rem;
-
-        &_link {
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          font-size: 2vw;
-          font-weight: 600;
-          cursor: pointer;
-          z-index: 2;
-          transition: background-color 1s ease;
-          color: $secondary_color;
-          background: $linear_gradient_text;
-          color: black;
-
-          &:hover {
-            background: $reverse_linear_gradient_text;
-            color: black;
-            @include box-shadow_buttons;
-          }
-
-          &:active {
-            background: $linear_gradient_text;
-            color: white;
-          }
-        }
-
-        &_text {
-          border: none;
-          border-radius: 5px;
-          font-size: 6vw;
-          z-index: 2;
-          background-color: $reverse_linear_gradient_text;
-          background: $linear_gradient_text;
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-          text-transform: italic;
-          text-decoration: underline;
-        }
+      &_text {
+        border: none;
+        border-radius: 5px;
+        font-size: 6vw;
+        z-index: 2;
+        background-color: $reverse_linear_gradient_text;
+        background: $linear_gradient_text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: italic;
+        text-decoration: underline;
       }
     }
   }
-
-  // end decouverte formule container
+}

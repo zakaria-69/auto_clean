@@ -1,154 +1,148 @@
 .formules_picker_container {
-    margin: 10rem auto;
-    width: 80%;
+  margin: 10rem auto;
+  width: 80%;
+  @include linearGradientText;
+  text-align: center;
+
+  & h2 {
+    @include sections_title;
     @include linearGradientText;
-    text-align: center;
+    text-decoration: underline #00aaff double 2px;
+    margin-bottom: 4rem;
+  }
 
-    & h2 {
-      @include sections_title;
-      @include linearGradientText;
-      text-decoration: underline #00aaff double 2px;
-      margin-bottom: 4rem;
-    }
+  &_cards {
+    display: flex;
+    justify-content: space-between;
 
-    &_cards {
-      display: flex;
-      justify-content: space-between;
+    &_card {
+      width: 32%;
+      border-radius: 15px;
 
-      &_card {
-        width: 32%;
-        // position: relative;
-        border-radius: 15px;
+      &_title {
+        @include subSections_title;
+        @include linearGradientText;
+        margin: 2rem auto;
+        z-index: 1;
+      }
 
-        &_title {
-          @include subSections_title;
-          @include linearGradientText;
-          margin: 2rem auto;
-          z-index: 1;
-        }
+      &_price {
+        margin: 2rem auto;
+        z-index: 1;
+        font-size: 3rem;
+        @include linearGradientText;
+        font-weight: 600;
+      }
 
-        &_price {
-          margin: 2rem auto;
-          z-index: 1;
-          font-size: 3rem;
-          @include linearGradientText;
-          font-weight: 600;
-        }
+      &_link {
+        @include linkMedium;
+        z-index: 1;
+        color: black;
 
-        &_link {
-          // margin: 0 auto 8rem auto !important;
-          @include linkMedium;
-          z-index: 1;
+        & a {
           color: black;
-          // border: solid red 2px;
-
-          & a {
-            color: black;
-          }
-
-          &:hover {
-            background: $reverse_linear_gradient_text;
-            @include box-shadow_buttons;
-          }
-
-          &:active {
-            background: $linear_gradient_text;
-          }
         }
 
-        & ul {
-          margin: 2rem auto 6rem auto;
+        &:hover {
+          background: $reverse_linear_gradient_text;
+          @include box-shadow_buttons;
+        }
+
+        &:active {
+          background: $linear_gradient_text;
+        }
+      }
+
+      & ul {
+        margin: 2rem auto 6rem auto;
+        z-index: 10;
+
+        & li {
           z-index: 10;
-          // min-height: 45%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          text-align: center;
+          font-size: 1.5rem;
+        }
 
-          & li {
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            text-align: center;
-            font-size: 1.5rem;
-          }
-
-          & p {
-            text-align: center;
-            margin-left: 5px;
-            z-index: 1;
-            @include linearGradientText;
-            font-weight: 700;
-          }
+        & p {
+          text-align: center;
+          margin-left: 5px;
+          z-index: 1;
+          @include linearGradientText;
+          font-weight: 700;
         }
       }
     }
+  }
 
-    &_informations {
+  &_informations {
+    display: flex;
+    margin-top: 5rem;
+    padding: 2rem;
+
+    &_prestationTime {
+      width: 50%;
       display: flex;
-      margin-top: 5rem;
-      padding: 2rem;
+      align-items: center;
+      justify-content: center;
 
-      &_prestationTime {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &_titleAndText {
-          margin-left: 2rem;
-          @include linearGradientText;
-        }
-
-        & h3 {
-          font-size: 1.5rem;
-        }
-
-        & p {
-          font-size: 1.2rem;
-        }
+      &_titleAndText {
+        margin-left: 2rem;
+        @include linearGradientText;
       }
 
-      &_paiementMethods {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      & h3 {
+        font-size: 1.5rem;
+      }
 
-        &_titleAndText {
-          margin-left: 2rem;
-          @include linearGradientText;
-        }
+      & p {
+        font-size: 1.2rem;
+      }
+    }
 
-        & h3 {
-          font-size: 1.5rem;
-        }
+    &_paiementMethods {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        & p {
-          font-size: 1.2rem;
-        }
+      &_titleAndText {
+        margin-left: 2rem;
+        @include linearGradientText;
+      }
+
+      & h3 {
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1.2rem;
       }
     }
   }
+}
 
-  .formule_card_one,
-  .formule_card_two,
-  .formule_card_three {
-    @include overlayImgBackround;
-  }
+.formule_card_one,
+.formule_card_two,
+.formule_card_three {
+  @include overlayImgBackround;
+}
 
-  // handling image background for formules section
-  .formule_card_one {
-    background-image: url('../../src/assets/img/black_car_courbe.jpg');
-    background-position: 40%;
-  }
+// handling image background for formules section
+.formule_card_one {
+  background-image: url('../../src/assets/img/black_car_courbe.jpg');
+  background-position: 40%;
+}
 
-  .formule_card_two {
-    background-image: url('../../src/assets/img/black_car_waterground.jpg');
-    background-position: 80%;
-  }
+.formule_card_two {
+  background-image: url('../../src/assets/img/black_car_waterground.jpg');
+  background-position: 80%;
+}
 
-  .formule_card_three {
-    background-image: url('../../src/assets/img/black_car_ciel_violet.jpg');
-    background-position: 30%;
-  }
-
-  // end images background
+.formule_card_three {
+  background-image: url('../../src/assets/img/black_car_ciel_violet.jpg');
+  background-position: 30%;
+}

@@ -1,18 +1,19 @@
 @keyframes wash-text {
-    from {
-      left: -100%; 
-    }
-    to {
-      left: 100%; 
-    }
+  from {
+    left: -100%;
   }
-  
-  @keyframes wash-icon {
-    from {
-      left: -100%; 
-    }
-    to {
-      left: 100%; 
-    }
+
+  to {
+    left: 100%;
   }
-  
+}
+
+@keyframes wash-icon {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

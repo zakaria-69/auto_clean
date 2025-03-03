@@ -92,7 +92,6 @@
             & button {
                 @include linkMedium;
                 width: 10rem;
-                // border: solid red 2px;
                 margin-top: 2rem;
 
 
@@ -147,7 +146,6 @@
 
     .contact_icon {
         font-size: 1.6rem;
-        // color: #00aaff;
         margin-right: 15px;
         text-decoration: underline solid blue 4px;
 
@@ -162,11 +160,10 @@
         background-color: #00aaff;
         border-radius: 15px;
     }
-    
-    .form_validation_button{
-        //  border: solid red 2px;
-         width: 100%;
-         justify-content:center;
-         display :flex;
+
+    .form_validation_button {
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 }

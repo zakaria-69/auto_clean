@@ -1,5 +1,4 @@
 // header
-
 .home_container_header_left_nav nav ul li a {
   position: relative;
   display: inline-block;
@@ -18,7 +17,6 @@
   color: transparent;
 
   &:hover {
-    // background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -154,10 +152,11 @@
 
 .light-theme .decouverte_formule_container {
 
-  & h2{
+  & h2 {
     color: white;
     font-size: 6.5vw;
   }
+
   & p {
     color: white;
   }
@@ -171,7 +170,6 @@
     cursor: pointer;
     z-index: 2;
     transition: background-color 1s ease;
-    // color: $secondary_color;
     background: white;
     color: black;
 
@@ -179,7 +177,6 @@
       filter: drop-shadow(4px 4px 4px white);
       background: black;
       color: white;
-      // box-shadow: 4px 4px 2px white;
     }
 
     &:active {
@@ -194,7 +191,6 @@
 // description
 
 .light-theme .description_reviews_container {
-  // border: solid red 2px;
   color: black;
 
   &_subcontainer_description {
@@ -245,7 +241,6 @@
 // formulePicker
 
 .light-theme .formules_picker_container {
-  // border: solid red 2px;
   color: black;
 
   & h2 {
@@ -262,7 +257,6 @@
   }
 
   &_cards_card_link {
-    // margin: 0 auto 8rem auto !important;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -275,7 +269,6 @@
     color: black;
     text-align: center;
     width: 75%;
-    // margin: 2rem auto 2rem auto;
     z-index: 1;
     color: black;
 
@@ -305,8 +298,6 @@
 
 
   &_informations {
-    // border: solid red 2px;
-
     & h3 {
       color: black;
     }
@@ -411,12 +402,8 @@
   li {
     color: black;
   }
-
 }
 
-// .light-theme .footer_container_contact_list ul li a{
-
-// }
 
 // Footer
 
@@ -424,7 +411,6 @@
   color: black;
   font-size: 1.2rem;
   position: relative;
-  // color: $primary_color;
   display: inline-block;
   overflow: hidden;
   background: $linear_gradient_text;
@@ -437,7 +423,6 @@
 
   &:hover {
     color: black;
-    // @include box-shadow_buttons;
   }
 
   &::before {
@@ -464,10 +449,8 @@
   padding: 10px 10px 10px 10px;
   font-size: 1.9rem;
   position: relative;
-  // color: black;
   display: inline-block;
   overflow: hidden;
-  // background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
 
@@ -475,7 +458,6 @@
     background: linear-gradient(120deg, #ffffff, #00aaff, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
-    // @include box-shadow_buttons;
   }
 
   &::before {
@@ -494,12 +476,9 @@
   &:hover::before {
     animation: wash-icon 1s ease-in-out forwards;
   }
-
 }
 
-
 .dark-theme .footer_container_contact_list ul li a {
-
   font-size: 1.2rem;
   position: relative;
   color: $primary_color;
@@ -544,7 +523,8 @@
   overflow: hidden;
   background-clip: text;
   -webkit-background-clip: text;
-  color :rgb(78, 206, 248);;
+  color: rgb(78, 206, 248);
+  ;
 
   &::before {
     content: '';
@@ -570,46 +550,53 @@
   }
 }
 
-  // services
-  .light-theme .service_card_one, .light-theme .service_card_two a, .light-theme .service_card_three a, .light-theme{
-    bottom: 20px;
-  }
+// services
+.light-theme .service_card_one,
+.light-theme .service_card_two a,
+.light-theme .service_card_three a,
+.light-theme {
+  bottom: 20px;
+}
 
 //meeting page
 
-.light-theme .meetings_container{
-  &_subcontainer{
-    &_titleAndText{
+.light-theme .meetings_container {
+  &_subcontainer {
+    &_titleAndText {
 
-      & h1{
+      & h1 {
         color: black;
         text-decoration: underline double 3px black;
       }
-  
-      & p{
+
+      & p {
         color: black;
       }
-  
-      & span{
+
+      & span {
         color: black;
       }
-     
+
     }
-    &_card_container{
-      & h2, p {
+
+    &_card_container {
+
+      & h2,
+      p {
         color: white;
       }
     }
+
     & a {
       background: white;
       color: black;
-  
+
       &:hover {
         background: black;
         color: white;
         filter: drop-shadow(4px 4px 4px white);
       }
-  
+
       &:active {
         background: white;
         color: black;
@@ -623,126 +610,125 @@
 
 // contact page 
 
-.light-theme .contact_container{
-  & p, span{
+.light-theme .contact_container {
+
+  & p,
+  span {
     color: black;
   }
-  
-  // border: solid red 2px;
 
-  &_subcontainer{
+  &_subcontainer {
 
 
-    &_titleAndText{
-      & h1{
+    &_titleAndText {
+      & h1 {
         color: black;
         text-decoration: underline double 3px black;
       }
-      & p{
+
+      & p {
         font-style: italic;
       }
     }
   }
 
-  & button{
+  & button {
+    background: black;
+    color: white;
+
+    &:hover {
+      background: white;
+      color: black;
+      filter: drop-shadow(4px 4px 4px black);
+    }
+
+    &:active {
       background: black;
       color: white;
-  
+      filter: drop-shadow(4px 4px 4px black);
+    }
+  }
+
+  &_infos {
+
+    & span,
+    p,
+    a {
+      color: black;
+    }
+  }
+
+  & hr {
+    background-color: black;
+  }
+}
+
+// informations page
+
+.light-theme .information_container {
+
+  & p,
+  a {
+    color: black;
+  }
+
+  &_subcontainer {
+    border: double black 4px;
+
+    & h1 {
+      color: black;
+      text-decoration: underline double 3px black;
+    }
+
+    &_infosContainer_schedule_day {
+      border-bottom: double black 4px;
+      border-top: double black 4px;
+    }
+
+  }
+
+  .information_appointment {
+    border-left: double black 4px;
+    border-right: double black 4px;
+
+    & h2 {
+      color: black;
+    }
+
+    & a {
+      background: black;
+      color: white;
+
       &:hover {
         background: white;
         color: black;
         filter: drop-shadow(4px 4px 4px black);
       }
-  
+
       &:active {
         background: black;
         color: white;
         filter: drop-shadow(4px 4px 4px black);
       }
     }
-
-    &_infos{
-      // border: solid red 2px;
-
-      & span, p , a {
-        color: black;
-      }
-    }
-
-    & hr{
-      background-color: black;
-    }
   }
+}
 
-  // informations page
+#linkContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+  margin: 4rem auto 10px auto;
+}
 
-  .light-theme .information_container{
-    // border: solid red 2px;
-    & p , a {
-      color: black;
-    }
+#linkContainer_top,
+#linkContainer_bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+}
 
-    &_subcontainer{
-      border: double black 4px ;
-      & h1{
-        color: black;
-        text-decoration: underline double 3px black;
-      }
-
-      &_infosContainer_schedule_day{
-        border-bottom: double black 4px ;
-        border-top:   double black 4px ;
-      }
-      
-    }
-    .information_appointment{
-      border-left: double black 4px ;
-        border-right:   double black 4px ;
-
-      & h2{
-        color: black;
-      }
-
-      & a {
-        background: black;
-        color: white;
-    
-        &:hover {
-          background: white;
-          color: black;
-          filter: drop-shadow(4px 4px 4px black);
-        }
-    
-        &:active {
-          background: black;
-          color: white;
-          filter: drop-shadow(4px 4px 4px black);
-        }
-      }
-    }
-  }
-
-  #linkContainer{
-    // border: solid red 3px;
-    position: absolute;
-    width: 100%;
-    bottom: 2px;
-    margin: 4rem auto 10px auto;
-  }
-
-  #linkContainer_top, #linkContainer_bottom{
-    // border: solid red 3px;
-    position: absolute;
-    width: 100%;
-    bottom: 2px;
-    // margin: 4rem auto 10px auto;
-  }
-
-  .light-theme .home-nav-icon, .dark-theme .home-nav-icon{
-    // border: solid red 2px;
-    color: #00aaff;
-    // z-index: 1000;
-  }
-
-
-
+.light-theme .home-nav-icon,
+.dark-theme .home-nav-icon {
+  color: #00aaff;
+}

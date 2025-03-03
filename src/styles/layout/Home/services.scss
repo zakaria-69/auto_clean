@@ -1,139 +1,137 @@
-.service_container{
-    color: white;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    margin: 10rem auto;
+.service_container {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 10rem auto;
 
-    &_title_container{
+  &_title_container {
 
-      & h2 {
-        @include sections_title;
-        @include linearGradientText;
-        text-decoration: underline #00aaff double 2px;
+    & h2 {
+      @include sections_title;
+      @include linearGradientText;
+      text-decoration: underline #00aaff double 2px;
+    }
+
+    & p {
+      font-size: 1.7rem;
+      font-weight: 600;
+      font-style: italic;
+      @include linearGradientText;
+    }
+  }
+
+  &_subcontainer {
+    padding: 2rem 0;
+    border-radius: 15px;
+
+    & h3 {
+      margin: 2rem auto;
+      font-size: 2rem;
+      @include linearGradientText;
+    }
+
+    & p {
+      margin: 0 auto 6rem auto;
+      @include reverseLinearGradientText;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    & a {
+      @include linkMedium;
+      width: 20%;
+
+      &:hover {
+        @include linkHover;
+        @include box-shadow_buttons;
       }
 
-      & p{
-        font-size: 1.7rem;
-        font-weight: 600;
-        font-style: italic;
-        @include linearGradientText;
+      &:active {
+        @include linkActive;
       }
     }
-    &_subcontainer{
+
+    &_top_container {
+      padding: 2rem 1rem;
+      border-radius: 15px;
+
+      & h3 {
+        margin: 1rem auto;
+        font-size: 2rem;
+        @include linearGradientText;
+      }
+
+      & p {
+        width: 70%;
+      }
+    }
+
+    &_middle_container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+
+      &_left {
+        width: 49%;
         padding: 2rem 0;
         border-radius: 15px;
 
-        & h3 {
-          margin:2rem auto;
-          font-size: 2rem;
-          @include linearGradientText;
-        }
-
-       & p{
-        margin: 0 auto 6rem auto;
-        @include reverseLinearGradientText;
-        font-size: 1.2rem;
-        font-weight: 700;
-       } 
-
-        & a {
-          @include linkMedium;
-          width: 20%;
-
-          &:hover {
-            @include linkHover;
-            @include box-shadow_buttons;
-          }
-
-          &:active {
-            @include linkActive;
-          }
-        }
- 
-      &_top_container{ 
-        padding: 2rem 1rem;
-        border-radius: 15px;
-      
-          & h3 {
-            margin:1rem auto;
-            font-size: 2rem;
-            @include linearGradientText;
-          }
-
-          & p{
-            // margin: 2rem auto;
-            width: 70%;
-          }  
-      }
-
-      &_middle_container{
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem 0;  
-
-        &_left{
-          width: 49%;
-          padding: 2rem 0;
-          border-radius: 15px;
-
-          & p{
-            width: 70%;
-          }
-        }
-
-        &_right{
-          width: 49%;
-          padding: 2rem 0;
-          border-radius: 15px;
-
-          & p{
-            width: 70%;
-          }
+        & p {
+          width: 70%;
         }
       }
 
-      &_bottom_container{
-        padding: 2rem 1rem;
+      &_right {
+        width: 49%;
+        padding: 2rem 0;
         border-radius: 15px;
 
-        & h3 {
-          margin:1rem auto;
-          font-size: 2rem;
-          @include linearGradientText;
-        }
-
-        & p{
-          // margin: 2rem auto;
+        & p {
           width: 70%;
         }
       }
     }
+
+    &_bottom_container {
+      padding: 2rem 1rem;
+      border-radius: 15px;
+
+      & h3 {
+        margin: 1rem auto;
+        font-size: 2rem;
+        @include linearGradientText;
+      }
+
+      & p {
+        width: 70%;
+      }
+    }
   }
+}
 
-  .service_card_one,
-    .service_card_two,
-    .service_card_three,
-    .service_card_four
-    {
-      @include overlayImgBackround;
-    }
+.service_card_one,
+.service_card_two,
+.service_card_three,
+.service_card_four {
+  @include overlayImgBackround;
+}
 
-    // handling image background for service section
-    .service_card_one {
-      background-image: url('../../src/assets/img/microRayures-clean.avif');
-      background-position:  40% 5;
-    }
+// handling image background for service section
+.service_card_one {
+  background-image: url('../../src/assets/img/microRayures-clean.avif');
+  background-position: 40% 5;
+}
 
-    .service_card_two {
-      background-image: url('../../src/assets/img/services_cars_ferrari.jpg');
-    }
+.service_card_two {
+  background-image: url('../../src/assets/img/services_cars_ferrari.jpg');
+}
 
-    .service_card_three {
-      background-image: url('../../src/assets/img/plastic_car2.jpeg');
-    }
+.service_card_three {
+  background-image: url('../../src/assets/img/plastic_car2.jpeg');
+}
 
-    .service_card_four {
-      background-image: url('../../src/assets/img/vapor_cleaning2.jpg');
-      background-position: 0 30%;
-    } // end images background
+.service_card_four {
+  background-image: url('../../src/assets/img/vapor_cleaning2.jpg');
+  background-position: 0 30%;
+}

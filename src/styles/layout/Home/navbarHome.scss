@@ -1,83 +1,81 @@
-.home-nav-wrapper{
-    position: fixed;
-    // right: 0;
-    // bottom: 0;
-    right: -45px;
-    bottom: 5px;
-    z-index: 9999;
-    padding: 15px;
-    color: #00aaff;
-    border: none;
-    border-radius: 15px;
-    background-color: transparent;
+.home-nav-wrapper {
+  position: fixed;
+  right: -45px;
+  bottom: 5px;
+  z-index: 9999;
+  padding: 15px;
+  color: #00aaff;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
 }
 
-.home-nav-container{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    right: 70px;
-   bottom: 45px;
-   width: 12rem;   
+.home-nav-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 70px;
+  bottom: 45px;
+  width: 12rem;
 
-& h3{
+  & h3 {
     text-align: center;
-}
+  }
 }
 
-.home-nav-icon{
-    transition:  transform 0.3s ease-in-out;
-    cursor: pointer;
+.home-nav-icon {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .rotate {
-    transform: rotate(90deg);
-  }
+  transform: rotate(90deg);
+}
 
 
-  .close-modal-btn{
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: none;
+.close-modal-btn {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
 
-    box-shadow: 2px 2px 1px black;
-  }
+  box-shadow: 2px 2px 1px black;
+}
 
-  .close-modal-icon{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-  }
-  .close-modal-icon:hover{
-    background-color: #00aaff;
-    cursor: pointer;
-  }
+.close-modal-icon {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
 
-  .home-nav-wrapper li {
-    margin: 10px auto;
-    text-align: center;
-  }
+.close-modal-icon:hover {
+  background-color: #00aaff;
+  cursor: pointer;
+}
 
-  .home-nav-wrapper a {
-    color: white;
-    font-weight: 600;
-  }
- 
-  .home-nav-wrapper a:hover {
-    color: #00aaff;
-  }
+.home-nav-wrapper li {
+  margin: 10px auto;
+  text-align: center;
+}
 
- .toggle-btn{
-    border: none;
-  }
- 
+.home-nav-wrapper a {
+  color: white;
+  font-weight: 600;
+}
+
+.home-nav-wrapper a:hover {
+  color: #00aaff;
+}
+
+.toggle-btn {
+  border: none;
+}

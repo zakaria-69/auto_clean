@@ -50,7 +50,7 @@
                 }
 
                 & a {
-                    @include linkMedium;           
+                    @include linkMedium;
 
                     &:hover {
                         @include linkHover;
@@ -60,10 +60,6 @@
                     &:active {
                         @include linkActive;
                     }
-                }
-
-                &_calendlyLink{
-                    // margin: 3rem auto 2rem;
                 }
             }
         }
