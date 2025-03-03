@@ -8,10 +8,9 @@ import {
 import CalendlyLink from "../calendlyLink";
 import { ThemeContext } from "../Theme";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import 'animate.css';
+import "animate.css";
 
 const FormulePicker = () => {
-  // const [theme, setTheme] = useState(document.body.className);
   const { theme } = useContext(ThemeContext);
   const fontCheckIconColor = "#00aaff";
 
@@ -41,10 +40,14 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
-            <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
-            <div className="formules_picker_container_cards_card_link">
-              <CalendlyLink />
-            </div>
+            <AnimationOnScroll
+              animateIn="animate__backInRight"
+              animateOnce="true"
+              offset={50}
+            >
+              <div className="formules_picker_container_cards_card_link">
+                <CalendlyLink />
+              </div>
             </AnimationOnScroll>
           </div>
         </div>
@@ -98,10 +101,14 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
-          <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
-            <div className="formules_picker_container_cards_card_link">
-              <CalendlyLink />
-            </div>
+            <AnimationOnScroll
+              animateIn="animate__backInRight"
+              animateOnce="true"
+              offset={50}
+            >
+              <div className="formules_picker_container_cards_card_link">
+                <CalendlyLink />
+              </div>
             </AnimationOnScroll>
           </div>
         </div>
@@ -139,10 +146,14 @@ const FormulePicker = () => {
             </div>
           </ul>
           <div id="linkContainer">
-          <AnimationOnScroll animateIn="animate__backInRight" animateOnce="true" offset={50}>
-            <div className="formules_picker_container_cards_card_link">
-              <CalendlyLink />
-            </div>
+            <AnimationOnScroll
+              animateIn="animate__backInRight"
+              animateOnce="true"
+              offset={50}
+            >
+              <div className="formules_picker_container_cards_card_link">
+                <CalendlyLink />
+              </div>
             </AnimationOnScroll>
           </div>
         </div>

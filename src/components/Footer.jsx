@@ -18,22 +18,38 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
-                <a href="https://www.instagram.com/__zak.l__/" target="_blank" className="navLink header_accueil">
+                <a
+                  href="https://www.instagram.com/__zak.l__/"
+                  target="_blank"
+                  className="navLink header_accueil"
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a href="https://www.snapchat.com/fr-FR" target="_blank" className="navLink header_meetings">
+                <a
+                  href="https://www.snapchat.com/fr-FR"
+                  target="_blank"
+                  className="navLink header_meetings"
+                >
                   <FontAwesomeIcon icon={faSnapchat} />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/zakaria-ladjrafi/"  target="_blank" className="navLink header_contact">
+                <a
+                  href="https://www.linkedin.com/in/zakaria-ladjrafi/"
+                  target="_blank"
+                  className="navLink header_contact"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href="mailto:ladjrafi_zakaria@yahoo.com" target="_blank" className="navLink header_mail">
+                <a
+                  href="mailto:ladjrafi_zakaria@yahoo.com"
+                  target="_blank"
+                  className="navLink header_mail"
+                >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
@@ -103,7 +119,6 @@ const Footer = () => {
         <iframe
           // eslint-disable-next-line max-len
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44538.52695156109!2d4.793930673298822!3d45.75800318058034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon!5e0!3m2!1sfr!2sfr!4v1733871758989!5m2!1sfr!2sfr"
-          // style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

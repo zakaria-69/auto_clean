@@ -2,19 +2,19 @@ import React, { createContext, useState, useEffect } from "react";
 
 export const themes = {
   dark: {
-    background: "black", 
+    background: "black",
     backgroundButton: "linear-gradient(120deg, #00aaff, #ffffff, #00aaff)",
     text: "linear-gradient(120deg, #00aaff, #ffffff, #00aaff)",
     textButton: "black",
-    bodyClass: 'dark-theme', 
-    icon : "#00aaff",
+    bodyClass: "dark-theme",
+    icon: "#00aaff",
   },
   light: {
-    background: "white", 
+    background: "white",
     text: "black",
     textButton: "black",
-    backgroundButton: "white", 
-    bodyClass: 'light-theme',
+    backgroundButton: "white",
+    bodyClass: "light-theme",
     icon: "#000000",
   },
 };
