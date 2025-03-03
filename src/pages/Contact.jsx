@@ -10,12 +10,10 @@ import { faEnvelope, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../components/Theme";
 import ThemeSwitch from "../components/ThemeSwitch";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import 'animate.css';
-
-// import dotenv from 'dotenv';
+import "animate.css";
 
 const Contact = () => {
-  const {theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const schema = yup
     .object({
       nom: yup.string().max(50).required("Veuillez saisir vôtre nom"),
@@ -136,8 +134,13 @@ const Contact = () => {
               obligatoires
             </span>
           </div>
-          <AnimationOnScroll className="form_validation_button" animateIn="animate__backInRight" offset={50} animateOnce="true">
-          <button type="submit">Envoyer</button>
+          <AnimationOnScroll
+            className="form_validation_button"
+            animateIn="animate__backInRight"
+            offset={50}
+            animateOnce="true"
+          >
+            <button type="submit">Envoyer</button>
           </AnimationOnScroll>
         </form>
       </div>
@@ -145,7 +148,11 @@ const Contact = () => {
       <div className="contact_container_infos">
         <div className="contact_container_infos_email">
           <span>
-            <FontAwesomeIcon icon={faEnvelope} color={theme.icon} className="contact_icon"  />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              color={theme.icon}
+              className="contact_icon"
+            />
             Email :
           </span>
           <p>
@@ -156,20 +163,32 @@ const Contact = () => {
         </div>
         <div className="contact_container_infos_phone">
           <span>
-            <FontAwesomeIcon icon={faPhone} color={theme.icon} className="contact_icon" />
+            <FontAwesomeIcon
+              icon={faPhone}
+              color={theme.icon}
+              className="contact_icon"
+            />
             Téléphone :
           </span>
           <p>
-            <a href="tel:+33782479774" target="_blank">+33 7 82 47 97 74</a>
+            <a href="tel:+33782479774" target="_blank">
+              +33 7 82 47 97 74
+            </a>
           </p>
         </div>
         <div className="contact_container_infos_adress">
           <span>
-            <FontAwesomeIcon icon={faHome} color={theme.icon} className="contact_icon" />
+            <FontAwesomeIcon
+              icon={faHome}
+              color={theme.icon}
+              className="contact_icon"
+            />
             Adresse :
           </span>
           <p>
-            <a href="https://maps.app.goo.gl/Qu5WrAk7HbJ9dWxz5" target="_blank">Lyon</a>
+            <a href="https://maps.app.goo.gl/Qu5WrAk7HbJ9dWxz5" target="_blank">
+              Lyon
+            </a>
           </p>
         </div>
       </div>

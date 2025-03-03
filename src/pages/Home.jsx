@@ -11,7 +11,7 @@ import ThemeSwitch from "../components/ThemeSwitch";
 import NavbarHome from "../components/Home/NavbarHome";
 
 const Home = () => {
-   const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <section style={{ backgroundColor: theme.background, color: theme.text }}>
       <NavbarHome />
