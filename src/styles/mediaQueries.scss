@@ -1,49 +1,116 @@
-@media screen and (max-width: 269px) {
+//DESKTOP
 
-    .light-theme .service_card_one a,
-    .light-theme .service_card_two a,
-    .light-theme .service_card_three a,
-    .light-theme .service_card_four a,
-    .dark-theme .service_card_one a,
-    .dark-theme .service_card_two a,
-    .dark-theme .service_card_three a,
-    .dark-theme .service_card_four a {
-        width: 80%;
-        font-size: 0.8rem;
-        min-width: 80%;
-        max-width: 80%;
+@media screen and (max-width: 1340px) {
+
+    .light-theme .prestations_container_main_container_top_container a,
+    .dark-theme .prestations_container_main_container_top_container a {
+        width: 300px;
     }
 
-    .formules_picker_container_cards_card_price {
-        font-size: 1rem !important;
+    .light-theme .formules_picker_container_cards_card_link,
+    .dark-theme .formules_picker_container_cards_card_link {
+        width: 90%;
     }
 
-    p {
-        font-size: 1rem !important;
+    .light-theme .footer_container,
+    .dark-theme .footer_container {
+        flex-wrap: wrap;
+
     }
 
-    h3 {
+    .light-theme .footer_containerlogoAndSocials,
+    .dark-theme .footer_containerlogoAndSocials {
+        width: 25%;
+    }
+
+    .light-theme .footer_container_about,
+    .dark-theme .footer_container_about {
+        width: 25%;
+    }
+
+    .light-theme .footer_container_contact,
+    .dark-theme .footer_container_contact {
+        width: 25%;
+    }
+
+    .light-theme .footer_container_schedule,
+    .dark-theme .footer_container_schedule {
+        width: 25%;
+    }
+
+    .dark-theme .footer_container_map {
+        width: 100%;
+        padding: 2rem;
+        border-top: double 4px #00aaff;
+    }
+
+    .light-theme .footer_container_map {
+        width: 100%;
+        padding: 2rem;
+        border-top: double 4px black;
+    }
+
+
+    .light-theme #footer_map,
+    .dark-theme #footer_map {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+
+    .light-theme .home_container_header_left_nav nav ul li a,
+    .dark-theme .home_container_header_left_nav nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .light-theme p,
+    .dark-theme p {
+        font-size: 1.5rem;
+    }
+   
+    .light-theme .description_reviews_container a,
+    .dark-theme .description_reviews_container_subcontainer_reviews_button {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .light-theme .information_container_subcontainer_infosContainer_contact,
+    .dark-theme .information_container_subcontainer_infosContainer_contact,
+    .light-theme .information_container_subcontainer_infosContainer_schedule,
+    .dark-theme .information_container_subcontainer_infosContainer_schedule {
+
+        & p {
+            font-size: 1.3rem !important;
+        }
+
+        & a {
+            font-size: 1.3rem !important;
+        }
+
+    }
+
+    .light-theme .footer_container h3,
+    .dark-theme .footer_container h3 {
+        font-size: 1.3rem;
+    }
+
+    .light-theme .footer_container p,
+    .light-theme .footer_container li,
+    .dark-theme .footer_container p,
+    .dark-theme 
+
+        {
         font-size: 1.1rem !important;
     }
 
-    .service_card_one #linkContainer {
-        margin: 0 auto;
-        position: static;
-    }
-
-    .service_card_one #linkContainer a {
-        margin: 0 auto;
-    }
-
-
-    #linkContainer {
-        position: absolute;
-        bottom: 4px;
-    }
-
-    .service_container_subcontainer_top_container,
-    .service_container_subcontainer_bottom_container {
-        padding: 2rem 0;
+    .light-theme .footer_container_contact span,
+    .dark-theme .footer_container_contact span {
+        font-size: 1.1rem;
     }
 
     .light-theme .footer_container_schedules ol li,
@@ -51,190 +118,138 @@
         font-size: 1rem !important;
     }
 
+    .meetings_container_subcontainer {
+        width: 98%;
+
+    }
+
+    .meetings_card_one {
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 316px) {
-    .home_container_header_left_nav nav ul {
-        display: flex;
+@media screen and (max-width: 1030px) {
+    .iconContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 961px) {
+
+    .home_container_header_logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 1.2rem !important;
+    }
+
+    .home_container_header_logo img {
+        width: 8rem;
+        margin: 0 auto;
+    }
+
+    .home_container_header {
         flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
-    .light-theme .home_container_header_left_nav nav ul li a,
-    .dark-theme .home_container_header_left_nav nav ul li a {
-        font-size: 1.1rem;
-    }
-
-    .light-theme .home_container_header_social_medias a,
-    .dark-theme .home_container_header_social_medias a {
-        font-size: 1.5rem;
-        padding: 0;
-    }
-
-    .light-theme .footer_container_logoAndSocials_medias nav ul li a,
-    .dark-theme .footer_container_logoAndSocials_medias a {
-        font-size: 1.5rem;
-        padding: 0;
-    }
-
-    //////////// Contact Page /////////////////
-    .contact_container h1 {
-        font-size: 12vw;
-    }
-
-    ////////////// meeting page //////////////
-
-    .meetings_container_subcontainer_titleAndText h1 {
-        font-size: 12vw;
-    }
-
-
-    ///////////////////// informations page ///////////////
-
-    .light-theme .information_container_subcontainer h1,
-    .dark-theme .information_container_subcontainer h1 {
-        font-size: 12vw;
-    }
-}
-
-@media screen and (max-width: 330px) {
-
-    // buttons size
-    .light-theme .description_reviews_container a,
-    .dark-theme .description_reviews_container_subcontainer_reviews_button,
-    .light-theme .formules_picker_container_cards_card_link,
-    .dark-theme .formules_picker_container_cards_card_link {
-        width: 90%;
-        max-width: 96%;
-    }
-
-    .light-theme .prestations_container_main_container_top_container a,
-    .dark-theme .prestations_container_main_container_top_container a {
-        width: 90%;
-        max-width: 96%;
-        font-size: 0.8rem;
-    }
-
-    .light-theme .information_appointment,
-    .dark-theme .information_appointment {
-        margin-bottom: 2rem;
-        padding-top: 2.5rem;
-
-    }
-}
-
-
-@media screen and (max-width: 397px) {
-
-    .formules_picker_container h2,
-    .prestations_container h2,
-    .service_container h2 {
-        font-size: 10vw;
-        max-width: 100%;
-        word-wrap: break-word;
-    }
-
-}
-
-@media screen and (max-width: 574px) {
-
-    .light-theme .home_container_header_left_nav nav ul li a,
-    .dark-theme .home_container_header_left_nav nav ul li a {
-        font-size: 5vw;
-    }
-
-    .light-theme .home_container_header_social_medias a,
-    .dark-theme .home_container_header_social_medias a {
-        font-size: 5vw;
-    }
-
-    .light-theme .home_container_header_left_nav nav ul li a,
-    .dark-theme .home_container_header_left_nav nav ul li a {
-        font-size: 5vw;
-    }
-
-
-    .light-theme .footer_container_logoAndSocials_medias nav ul li a,
-    .dark-theme .footer_container_logoAndSocials_medias a {
-        font-size: 6vw;
-    }
-
-    .light-theme .footer_container_logoAndSocials_medias,
-    .dark-theme .footer_container_logoAndSocials_medias {
+    .home_container_header_left_nav {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 619px) {
-    .formules_picker_container_informations {
-        display: flex;
-        flex-direction: column;
-
-        &_prestationTime {
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-
-        &_paiementMethods {
-            width: 100%;
-        }
+    .home_container_header_left_nav nav ul {
+        justify-content: space-around;
     }
 
-    // buttons size
+    .home_container_header_social_medias {
+        justify-content: space-between;
+        width: auto;
+        margin: 0;
+    }
+
+    .home_container_header_social_medias nav ul li {
+        margin: 1rem 2rem;
+    }
+
+    .light-theme .home_container_header_left_nav nav ul li,
+    .dark-theme .home_container_header_left_nav nav ul li {
+        margin: 0;
+    }
+
+
+    .light-theme .home_container_header_left_nav nav ul li a,
+    .dark-theme .home_container_header_left_nav nav ul li a {
+        font-size: 3vw;
+    }
+
     .light-theme .description_reviews_container a,
     .dark-theme .description_reviews_container_subcontainer_reviews_button,
     .light-theme .formules_picker_container_cards_card_link,
     .dark-theme .formules_picker_container_cards_card_link {
-        width: 12rem;
-        max-width: 96%;
-    }
-
-    .light-theme .prestations_container_main_container_top_container a,
-    .dark-theme .prestations_container_main_container_top_container a {
+        margin-top: 2rem;
         font-size: 0.8rem;
     }
 
-    ///////////////////// informations page ///////////////
-
-    .information_container_subcontainer_infosContainer {
-        flex-direction: column;
-
-        &_contact {
-            width: 100%;
-
-            &_adress {
-                width: 100%;
-                justify-content: center;
-            }
-
-            &_phone {
-                justify-content: center;
-            }
-
-            &_email {
-                justify-content: center;
-            }
-
-        }
-
-        &_schedule {
-            width: 100%;
-
-        }
+    .formules_picker_container_cards_card_title,
+    .prestations_container_main_container_bottom_container_subcontainer h3 {
+        font-size: 1.5rem;
     }
 
-    .light-theme .information_appointment,
-    .dark-theme .information_appointment {
-        border: none;
+    .formules_picker_container_cards_card_title,
+    .prestations_container_main_container_bottom_container_subcontainer p {
+        font-size: 1.2rem;
+    }
+
+    .formules_picker_container_cards_card_price {
+        font-size: 1.4rem !important;
+    }
+
+    .formules_picker_container_cards_card ul li {
+        margin: 10px auto;
+    }
+
+    .formules_picker_container_cards_card ul p {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .contact_container_infos a {
+        font-size: 1rem !important;
+    }
+
+    .light-theme .information_container_subcontainer_infosContainer_contact,
+    .dark-theme .information_container_subcontainer_infosContainer_contact,
+    .light-theme .information_container_subcontainer_infosContainer_schedule,
+    .dark-theme .information_container_subcontainer_infosContainer_schedule {
+
+        & p {
+            font-size: 1.1rem !important;
+        }
+
+        & a {
+            font-size: 1.1rem !important;
+        }
+
+    }
+
+    .meetings_card_one {
+        width: 90%;
+    }
+
+    .light-theme .information_container_subcontainer,
+    .dark-theme .information_container_subcontainer {
         width: 98%;
     }
 
-    .about_me p {
-        font-size: 0.8rem !important;
-    }
 }
 
-// mobile
 @media screen and (max-width: 769px) {
+
     .home_container_header_left_nav {
         width: 98%;
     }
@@ -247,13 +262,11 @@
         }
     }
 
-    //decouverte
     .light-theme .decouverte_formule_container,
     .dark-theme .decouverte_formule_container {
         width: 98%;
     }
 
-    // description
     .light-theme .description_reviews_container,
     .dark-theme .description_reviews_container {
         width: 98%;
@@ -294,7 +307,6 @@
         width: 30%;
     }
 
-    //formules
     .light-theme .formules_picker_container,
     .dark-theme .formules_picker_container {
         width: 98%;
@@ -318,8 +330,6 @@
     .dark-theme .formules_picker_container_cards_card_link {
         width: 30%;
     }
-
-    //presations 
 
     .light-theme .prestations_container,
     .dark-theme .prestations_container {
@@ -365,7 +375,6 @@
         width: 100%;
     }
 
-    // footer
     .light-theme .footer_container,
     .dark-theme .footer_container {
         flex-direction: column;
@@ -425,7 +434,6 @@
     .dark-theme .footer_container_logoAndSocials_medias nav {
         width: 100%;
         min-width: 100%;
-
     }
 
     .light-theme .footer_container_logoAndSocials_medias nav ul,
@@ -433,13 +441,10 @@
         width: 100%;
     }
 
-    /////////////////// meetin page //////////////////////
-
     .meetings_card_one {
         width: 98%;
     }
 
-    /////////////////// Contact page //////////////////////
     .contact_container_subcontainer {
         width: 98%;
     }
@@ -474,8 +479,6 @@
         margin: 1rem auto;
     }
 
-    ///////////////////// informations page ///////////////
-
     .light-theme .information_container_subcontainer,
     .dark-theme .information_container_subcontainer {
         width: 98%;
@@ -484,176 +487,223 @@
 }
 
 
-@media screen and (max-width: 961px) {
-    .home_container_header_logo {
-        width: 100%;
-        justify-content: center;
-    }
-
-    p {
-        font-size: 1.2rem !important;
-    }
-
-    // header
-    .home_container_header_logo img {
-        width: 8rem;
-        margin: 0 auto;
-
-    }
-
-    .home_container_header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .home_container_header_left_nav {
-        width: 100%;
-    }
-
-    .home_container_header_left_nav nav ul {
-        justify-content: space-around;
-    }
-
-    .home_container_header_social_medias {
-        justify-content: space-between;
-        width: auto;
-        margin: 0;
-    }
-
-    .home_container_header_social_medias nav ul li {
-        margin: 1rem 2rem;
-    }
-
-    .light-theme .home_container_header_left_nav nav ul li,
-    .dark-theme .home_container_header_left_nav nav ul li {
-        margin: 0;
-
-    }
+@media screen and (max-width: 574px) {
 
 
     .light-theme .home_container_header_left_nav nav ul li a,
     .dark-theme .home_container_header_left_nav nav ul li a {
-        font-size: 1rem !important;
+        font-size: 5vw;
     }
 
-    //description 
+    .light-theme .home_container_header_social_medias a,
+    .dark-theme .home_container_header_social_medias a {
+        font-size: 5vw;
+    }
+
+    .light-theme .home_container_header_left_nav nav ul li a,
+    .dark-theme .home_container_header_left_nav nav ul li a {
+        font-size: 5vw;
+    }
+
+    .light-theme .footer_container_logoAndSocials_medias nav ul li a,
+    .dark-theme .footer_container_logoAndSocials_medias a {
+        font-size: 6vw;
+    }
+
+    .light-theme .footer_container_logoAndSocials_medias,
+    .dark-theme .footer_container_logoAndSocials_medias {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .formules_picker_container_informations {
+        display: flex;
+        flex-direction: column;
+
+        &_prestationTime {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &_paiementMethods {
+            width: 100%;
+        }
+    }
+
     .light-theme .description_reviews_container a,
     .dark-theme .description_reviews_container_subcontainer_reviews_button,
     .light-theme .formules_picker_container_cards_card_link,
     .dark-theme .formules_picker_container_cards_card_link {
-        margin-top: 2rem;
+        width: 12rem;
+        max-width: 96%;
+    }
+
+    .light-theme .prestations_container_main_container_top_container a,
+    .dark-theme .prestations_container_main_container_top_container a {
         font-size: 0.8rem;
     }
 
-    // formules
-    .formules_picker_container_cards_card_title,
-    .prestations_container_main_container_bottom_container_subcontainer h3 {
-        font-size: 1.5rem;
-    }
+    .information_container_subcontainer_infosContainer {
+        flex-direction: column;
 
-    .formules_picker_container_cards_card_title,
-    .prestations_container_main_container_bottom_container_subcontainer p {
-        font-size: 1.2rem;
-    }
+        &_contact {
+            width: 100%;
 
-    .formules_picker_container_cards_card_price {
-        font-size: 1.4rem !important;
-    }
+            &_adress {
+                width: 100%;
+                justify-content: center;
+            }
 
-    .formules_picker_container_cards_card ul li {
-        margin: 10px auto;
-    }
+            &_phone {
+                justify-content: center;
+            }
 
-    .formules_picker_container_cards_card ul p {
-        font-size: 1.3rem;
-        margin: 0;
-    }
+            &_email {
+                justify-content: center;
+            }
 
-    //contact
-
-    .contact_container_infos a {
-        font-size: 1rem !important;
-    }
-
-    // infos
-    .light-theme .information_container_subcontainer_infosContainer_contact,
-    .dark-theme .information_container_subcontainer_infosContainer_contact,
-    .light-theme .information_container_subcontainer_infosContainer_schedule,
-    .dark-theme .information_container_subcontainer_infosContainer_schedule {
-        & p {
-            font-size: 1.1rem !important;
         }
 
-        & a {
-            font-size: 1.1rem !important;
+        &_schedule {
+            width: 100%;
+
         }
-
     }
 
-    /////////////////// meetin page //////////////////////
-    .meetings_card_one {
-        width: 90%;
-    }
-
-    ///////////////////// informations page ///////////////
-    .light-theme .information_container_subcontainer,
-    .dark-theme .information_container_subcontainer {
+    .light-theme .information_appointment,
+    .dark-theme .information_appointment {
+        border: none;
         width: 98%;
+    }
+
+    .about_me p {
+        font-size: 0.8rem !important;
+    }
+}
+
+
+@media screen and (max-width: 397px) {
+
+    .formules_picker_container h2,
+    .prestations_container h2,
+    .service_container h2 {
+        font-size: 10vw;
+        max-width: 100%;
+        word-wrap: break-word;
     }
 
 }
 
-// LAPTOP and tablettes
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 330px) {
+    .light-theme .description_reviews_container a,
+    .dark-theme .description_reviews_container_subcontainer_reviews_button,
+    .light-theme .formules_picker_container_cards_card_link,
+    .dark-theme .formules_picker_container_cards_card_link {
+        width: 90%;
+        max-width: 96%;
+    }
+
+    .light-theme .prestations_container_main_container_top_container a,
+    .dark-theme .prestations_container_main_container_top_container a {
+        width: 90%;
+        max-width: 96%;
+        font-size: 0.8rem;
+    }
+
+    .light-theme .information_appointment,
+    .dark-theme .information_appointment {
+        margin-bottom: 2rem;
+        padding-top: 2.5rem;
+
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .home_container_header_left_nav nav ul {
+        display: flex;
+        flex-direction: column;
+    }
 
     .light-theme .home_container_header_left_nav nav ul li a,
     .dark-theme .home_container_header_left_nav nav ul li a {
-        font-size: 2vw;
-    }
-
-    .light-theme p,
-    .dark-theme p {
-        font-size: 1.5rem;
-    }
-
-    .light-theme .description_reviews_container a,
-    .dark-theme .description_reviews_container_subcontainer_reviews_button {
-        margin-top: 2rem;
         font-size: 1.1rem;
     }
-
-    .light-theme .information_container_subcontainer_infosContainer_contact,
-    .dark-theme .information_container_subcontainer_infosContainer_contact,
-    .light-theme .information_container_subcontainer_infosContainer_schedule,
-    .dark-theme .information_container_subcontainer_infosContainer_schedule {
-        & p {
-            font-size: 1.3rem !important;
-        }
-
-        & a {
-            font-size: 1.3rem !important;
-        }
-
+  
+    .light-theme .home_container_header_social_medias a,
+    .dark-theme .home_container_header_social_medias a {
+        font-size: 1.5rem;
+        padding: 0;
     }
 
-    //footer
-
-    .light-theme .footer_container h3,
-    .dark-theme .footer_container h3 {
-        font-size: 1.3rem;
+    .light-theme .footer_container_logoAndSocials_medias nav ul li a,
+    .dark-theme .footer_container_logoAndSocials_medias a {
+        font-size: 1.5rem;
+        padding: 0;
     }
 
-    .light-theme .footer_container p,
-    .light-theme .footer_container li,
-    .dark-theme .footer_container p,
-    .dark-theme {
+    .contact_container h1 {
+        font-size: 12vw;
+    }
+
+    .meetings_container_subcontainer_titleAndText h1 {
+        font-size: 12vw;
+    }
+
+
+    .light-theme .information_container_subcontainer h1,
+    .dark-theme .information_container_subcontainer h1 {
+        font-size: 12vw;
+    }
+}
+
+@media screen and (max-width: 269px) {
+    .light-theme .service_card_one a,
+    .light-theme .service_card_two a,
+    .light-theme .service_card_three a,
+    .light-theme .service_card_four a,
+    .dark-theme .service_card_one a,
+    .dark-theme .service_card_two a,
+    .dark-theme .service_card_three a,
+    .dark-theme .service_card_four a 
+
+        {
+        width: 80%;
+        font-size: 0.8rem;
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .formules_picker_container_cards_card_price {
+        font-size: 1rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    h3 {
         font-size: 1.1rem !important;
     }
 
-    .light-theme .footer_container_contact span,
-    .dark-theme .footer_container_contact span {
-        font-size: 1.1rem;
+    .service_card_one #linkContainer {
+        margin: 0 auto;
+        position: static;
+    }
+
+    .service_card_one #linkContainer a {
+        margin: 0 auto;
+    }
+
+
+    #linkContainer {
+        position: absolute;
+        bottom: 4px;
+    }
+
+    .service_container_subcontainer_top_container,
+    .service_container_subcontainer_bottom_container {
+        padding: 2rem 0;
     }
 
     .light-theme .footer_container_schedules ol li,
@@ -661,85 +711,4 @@
         font-size: 1rem !important;
     }
 
-    /////////////////// meetin page //////////////////////
-    .meetings_container_subcontainer {
-        width: 98%;
-
-    }
-
-    .meetings_card_one {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 1030px) {
-    .iconContainer {
-        width: 70%;
-        margin: 0 auto;
-    }
-}
-
-//DESKTOP
-
-@media screen and (max-width: 1340px) {
-
-    /////////////////// home Päge //////////////////////
-    .light-theme .prestations_container_main_container_top_container a,
-    .dark-theme .prestations_container_main_container_top_container a {
-        width: 300px;
-    }
-
-    .light-theme .formules_picker_container_cards_card_link,
-    .dark-theme .formules_picker_container_cards_card_link {
-        width: 90%;
-    }
-
-    // footer map
-    .light-theme .footer_container,
-    .dark-theme .footer_container {
-        flex-wrap: wrap;
-
-    }
-
-    .light-theme .footer_containerlogoAndSocials,
-    .dark-theme .footer_containerlogoAndSocials {
-        width: 25%;
-    }
-
-    .light-theme .footer_container_about,
-    .dark-theme .footer_container_about {
-        width: 25%;
-    }
-
-    .light-theme .footer_container_contact,
-    .dark-theme .footer_container_contact {
-        width: 25%;
-    }
-
-    .light-theme .footer_container_schedule,
-    .dark-theme .footer_container_schedule {
-        width: 25%;
-    }
-
-    .dark-theme .footer_container_map {
-        width: 100%;
-        padding: 2rem;
-        border-top: double 4px #00aaff;
-    }
-
-    .light-theme .footer_container_map {
-        width: 100%;
-        padding: 2rem;
-        border-top: double 4px black;
-    }
-
-
-    .light-theme #footer_map,
-    .dark-theme #footer_map {
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
